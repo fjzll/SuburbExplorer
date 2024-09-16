@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Net.Http;
+using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Xml.Linq;
-using System.Xml.Serialization;
 
 
 namespace SuburbExplorer.Services
@@ -18,11 +17,11 @@ namespace SuburbExplorer.Services
         const string baseURL = "https://api.data.abs.gov.au/data/";
         //Get an Http Client
         HttpClient client = new HttpClient();
-        ExcelService excelService;
+        ExcelService excelService = new ExcelService();
 
         public APIService() { }
 
-        public async Task<int?> GetHouseholdIncomeBySuburbName(string suburbName, string stateName)
+        public async Task<int?> GetHouseholdIncomeBySuburbNameAsync(string suburbName, string stateName)
         {
             // Get the suburb code and state code from Excel;
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
@@ -32,7 +31,7 @@ namespace SuburbExplorer.Services
             string fullURLSuburbName = $"{baseURL}{dataflow}4.{suburbCode}.SAL.{stateCode}";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, fullURLSuburbName);
             request.Headers.Add("x-api-key", apiKey);
-            request.Headers.Add("Accept", "application/vnd.sdmx.data+json");
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.sdmx.data+json"));
 
             //Send the request
             HttpResponseMessage response = await client.SendAsync(request);
@@ -45,6 +44,8 @@ namespace SuburbExplorer.Services
 
             //convert to C# object
             APIResponeMedIncome? responseMedIncome = JsonConvert.DeserializeObject<APIResponeMedIncome>(responseString);
+
+            //Extract the obs value
             if(responseMedIncome?.data?.dataSets != null)
             {
                 var series = responseMedIncome.data.dataSets[0].series;
@@ -55,9 +56,7 @@ namespace SuburbExplorer.Services
                     {
                         return observations["0"][0];
                     }
-                }
-
-                
+                }              
             }
             return null;
 

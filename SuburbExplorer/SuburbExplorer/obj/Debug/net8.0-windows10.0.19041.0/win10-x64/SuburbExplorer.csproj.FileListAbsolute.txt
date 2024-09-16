@@ -193,3 +193,4 @@ C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplore
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Drawing.Common.dll
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Pkcs.dll
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.sourcelink.json

@@ -29,269 +29,269 @@
     <AppXManifest Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-16T06:03:46.693</Modified>
+      <Modified>2024-09-16T14:59:30.272</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-16T06:03:46.520</Modified>
+      <Modified>2024-09-16T14:59:29.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.runtimeconfig.json">
       <PackagePath>SuburbExplorer.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-16T05:37:39.799</Modified>
+      <Modified>2024-09-16T14:32:42.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.dll">
       <PackagePath>SuburbExplorer.dll</PackagePath>
-      <Modified>2024-09-16T06:03:46.046</Modified>
+      <Modified>2024-09-16T14:59:28.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SuburbExplorer.exe</PackagePath>
-      <Modified>2024-09-16T06:03:46.053</Modified>
+      <Modified>2024-09-16T14:59:28.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-08-27T05:33:26.364</Modified>
+      <Modified>2024-09-16T13:41:34.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\SuburbCodes.xlsx">
       <PackagePath>SuburbCodes.xlsx</PackagePath>
-      <Modified>2024-09-12T13:04:17.351</Modified>
+      <Modified>2024-09-16T13:41:34.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:47.620</Modified>
+      <Modified>2024-09-16T13:41:36.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:47.646</Modified>
+      <Modified>2024-09-16T13:41:36.989</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:47.684</Modified>
+      <Modified>2024-09-16T13:41:36.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:47.741</Modified>
+      <Modified>2024-09-16T13:41:36.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:47.966</Modified>
+      <Modified>2024-09-16T13:41:36.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-08-27T05:33:26.356</Modified>
+      <Modified>2024-09-16T13:41:36.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-08-27T05:33:26.358</Modified>
+      <Modified>2024-09-16T13:41:36.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-08-27T05:33:48.045</Modified>
+      <Modified>2024-09-16T13:41:36.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.947</Modified>
+      <Modified>2024-09-16T13:41:36.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.993</Modified>
+      <Modified>2024-09-16T13:41:36.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:49.031</Modified>
+      <Modified>2024-09-16T13:41:36.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:49.094</Modified>
+      <Modified>2024-09-16T13:41:36.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:49.315</Modified>
+      <Modified>2024-09-16T13:41:36.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.250</Modified>
+      <Modified>2024-09-16T13:41:36.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.259</Modified>
+      <Modified>2024-09-16T13:41:36.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.300</Modified>
+      <Modified>2024-09-16T13:41:36.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.271</Modified>
+      <Modified>2024-09-16T13:41:36.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.279</Modified>
+      <Modified>2024-09-16T13:41:36.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.187</Modified>
+      <Modified>2024-09-16T13:41:36.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.196</Modified>
+      <Modified>2024-09-16T13:41:36.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.240</Modified>
+      <Modified>2024-09-16T13:41:36.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.208</Modified>
+      <Modified>2024-09-16T13:41:36.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.218</Modified>
+      <Modified>2024-09-16T13:41:36.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.065</Modified>
+      <Modified>2024-09-16T13:41:36.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.076</Modified>
+      <Modified>2024-09-16T13:41:36.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.087</Modified>
+      <Modified>2024-09-16T13:41:36.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.099</Modified>
+      <Modified>2024-09-16T13:41:36.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.111</Modified>
+      <Modified>2024-09-16T13:41:36.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.122</Modified>
+      <Modified>2024-09-16T13:41:36.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.133</Modified>
+      <Modified>2024-09-16T13:41:36.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.177</Modified>
+      <Modified>2024-09-16T13:41:36.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.141</Modified>
+      <Modified>2024-09-16T13:41:36.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.151</Modified>
+      <Modified>2024-09-16T13:41:36.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.475</Modified>
+      <Modified>2024-09-16T13:41:36.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.493</Modified>
+      <Modified>2024-09-16T13:41:36.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.512</Modified>
+      <Modified>2024-09-16T13:41:36.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.545</Modified>
+      <Modified>2024-09-16T13:41:36.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.605</Modified>
+      <Modified>2024-09-16T13:41:36.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.368</Modified>
+      <Modified>2024-09-16T13:41:36.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.379</Modified>
+      <Modified>2024-09-16T13:41:36.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.390</Modified>
+      <Modified>2024-09-16T13:41:36.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.427</Modified>
+      <Modified>2024-09-16T13:41:36.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.457</Modified>
+      <Modified>2024-09-16T13:41:36.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.310</Modified>
+      <Modified>2024-09-16T13:41:36.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.321</Modified>
+      <Modified>2024-09-16T13:41:36.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.330</Modified>
+      <Modified>2024-09-16T13:41:36.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.342</Modified>
+      <Modified>2024-09-16T13:41:36.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.357</Modified>
+      <Modified>2024-09-16T13:41:36.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.627</Modified>
+      <Modified>2024-09-16T13:41:36.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.652</Modified>
+      <Modified>2024-09-16T13:41:36.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.684</Modified>
+      <Modified>2024-09-16T13:41:36.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.737</Modified>
+      <Modified>2024-09-16T13:41:36.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.901</Modified>
+      <Modified>2024-09-16T13:41:36.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.042</Modified>
+      <Modified>2024-09-16T13:41:36.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.060</Modified>
+      <Modified>2024-09-16T13:41:36.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.084</Modified>
+      <Modified>2024-09-16T13:41:36.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.125</Modified>
+      <Modified>2024-09-16T13:41:36.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-08-27T05:33:48.238</Modified>
+      <Modified>2024-09-16T13:41:36.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.deps.json">
       <PackagePath>SuburbExplorer.deps.json</PackagePath>
-      <Modified>2024-09-16T05:37:39.641</Modified>
+      <Modified>2024-09-16T14:32:41.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
