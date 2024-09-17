@@ -10,6 +10,7 @@
         <Picker x:Name="PickerState" HorizontalOptions="Center" WidthRequest="300" Margin="0, 20"/>
         <Button x:Name="ButtonSearch" Text="Search" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSearch_Clicked" />
         <ProgressBar x:Name="ProgressBarOverallScore" HeightRequest="50" ProgressColor="Yellow" WidthRequest="500" Margin="0, 20" Progress="0.5"/>
+        <Entry x:Name="EntryABSdata" Placeholder="" Margin="50" x:FieldModifier="public" HeightRequest="100"/>
         <ListView x:Name="ListviewDemographicData" Margin="0" HeightRequest="200">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -52,7 +53,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Entry x:Name="EntryABSdata" Placeholder="" Margin="50" x:FieldModifier="public"/>
 
     </VerticalStackLayout>
 </ContentPage>
