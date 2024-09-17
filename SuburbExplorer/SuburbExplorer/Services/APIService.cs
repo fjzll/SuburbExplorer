@@ -21,20 +21,23 @@ namespace SuburbExplorer.Services
 
         public APIService() { }
 
-        public async Task<int?> GetHouseholdIncomeBySuburbNameAsync(string suburbName, string stateName)
+        public async Task<List<int?>> GetHouseholdIncomeAndRentAsync(string suburbName, string stateName)
         {
             // Get the suburb code and state code from Excel;
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
 
             //Form a request
             string dataflow = "C21_G02_SAL/";
-            string fullURLSuburbName = $"{baseURL}{dataflow}4.{suburbCode}.SAL.{stateCode}";
+            string fullURLSuburbName = $"{baseURL}{dataflow}4+6.{suburbCode}.SAL.{stateCode}";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, fullURLSuburbName);
             request.Headers.Add("x-api-key", apiKey);
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.sdmx.data+json"));
+            request.Headers.Add("User-Agent", "Mozilla/5.0");
 
             //Send the request
             HttpResponseMessage response = await client.SendAsync(request);
+
+            //var error = await response.Content.ReadAsStringAsync();
 
             //Check if the response is successful
             if(!response.IsSuccessStatusCode) { throw new HttpRequestException(); }
@@ -43,22 +46,33 @@ namespace SuburbExplorer.Services
             string responseString = await response.Content.ReadAsStringAsync();
 
             //convert to C# object
-            APIResponeMedIncome? responseMedIncome = JsonConvert.DeserializeObject<APIResponeMedIncome>(responseString);
+            APIResponeMedIncomeAndRent? responseMedIncomeAndRent = JsonConvert.DeserializeObject<APIResponeMedIncomeAndRent>(responseString);
+            var observations_list = new List<int?>();
 
             //Extract the obs value
-            if(responseMedIncome?.data?.dataSets != null)
+            if(responseMedIncomeAndRent?.data?.dataSets != null)
             {
-                var series = responseMedIncome.data.dataSets[0].series;
+                var series = responseMedIncomeAndRent.data.dataSets[0].series;
                 if (series != null)
                 {
-                    var observations = series["0:0:0:0"].observations;
-                    if (observations != null && observations.ContainsKey("0"))
+                    var seriesKeys = new[] { "0:0:0:0", "1:0:0:0" };
+                    foreach (var key in seriesKeys)
                     {
-                        return observations["0"][0];
+                        var observations = series[key].observations;
+                        if (observations != null && observations.ContainsKey("0"))
+                        {
+                            observations_list.Add(observations["0"][0]);
+                        }
+                        else
+                        {
+                            observations_list.Add(null);
+                        }
                     }
+
+
                 }              
             }
-            return null;
+            return observations_list;
 
         }
 

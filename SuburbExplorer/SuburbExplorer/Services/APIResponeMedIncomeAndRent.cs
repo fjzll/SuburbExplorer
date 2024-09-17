@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 
 namespace SuburbExplorer.Services
 {
-    public class APIResponeMedIncome
+    public class APIResponeMedIncomeAndRent
     {
         [JsonProperty("data")]
         public DataSet data { get; set; }
@@ -48,6 +48,10 @@ namespace SuburbExplorer.Services
           "0:0:0:0": 
            {
             "observations": {"0": [ 2890 ]}
+           }
+          "1:0:0:0": 
+           {
+            "observations": {"0": [ 420 ]}
            }
         }
       }

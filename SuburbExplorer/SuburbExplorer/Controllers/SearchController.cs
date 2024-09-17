@@ -26,9 +26,10 @@ namespace SuburbExplorer.Controllers
         public async Task UpdateSearchUIAsync(string suburbName, string stateName)
         {
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
-            int? mediumHousehouldIncome = await apiService.GetHouseholdIncomeBySuburbNameAsync(suburbName, stateName);
+            List<int?> mediumHousehouldIncomeAndRentList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
             // string response = await service.Get();
-            searchView.EntryABSdata.Text = $"suburb code: {suburbCode}; state code: {stateCode}";
+            searchView.EntryABSdata.Text = $"suburb code: {suburbCode}; state code: {stateCode};" +
+                $" medium rent: {mediumHousehouldIncomeAndRentList[0]}; medium income: {mediumHousehouldIncomeAndRentList[1]}";
 
         }
 
