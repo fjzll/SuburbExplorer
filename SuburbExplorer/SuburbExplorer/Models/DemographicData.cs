@@ -9,7 +9,7 @@ namespace SuburbExplorer.Models
     public class DemographicData
     {
         //Data from ABS API and Walk Score API
-        public AgeDistribution? AgeDistribution { get; set; }
+        public MedianAge? MedianAge { get; set; }
         public IncomeLevel? IncomeLevel { get; set; }
         public RentalRate? RentalRate { get; set; }
         public WalkScore? WalkScore { get; set; }
@@ -19,17 +19,13 @@ namespace SuburbExplorer.Models
         public decimal baseScore = 20;
 
 
-        public decimal CalculateAgeDistributionScore(AgeDistribution ageDistribution)
+        public decimal CalculateAgeScore(MedianAge medianAge)
         {
-
-            if (ageDistribution.AgeDistributionPercentageSuburb >= ageDistribution.AgeDistributionPercentageState)
+            int minAge = 35;
+            int maxAge = 54;
+            if (medianAge.Age >= minAge && medianAge.Age <= maxAge)
             {
                 return baseScore;
-            }
-            else if (ageDistribution.AgeDistributionPercentageSuburb < ageDistribution.AgeDistributionPercentageState && 
-                ageDistribution.AgeDistributionPercentageSuburb > 0.9m * ageDistribution.AgeDistributionPercentageState)
-            {
-                return baseScore * 0.5m;
             }
             else
             {
@@ -100,12 +96,12 @@ namespace SuburbExplorer.Models
 
         public decimal CalculateOverallScore()
         {
-            decimal ageDistributionScore = CalculateAgeDistributionScore(AgeDistribution);
+            decimal ageScore = CalculateAgeScore(MedianAge);
             decimal incomeLevelScore = CalculateIncomeLevelScore(IncomeLevel);
             decimal rentalRateScore = CalculateRentalRateScore(RentalRate);
             decimal walkScoreScore = CalculateWalkScore(WalkScore);
             decimal rentalYielScore = CalculateRentalYieldScore(RentalYield);
-            decimal overallScore = ageDistributionScore
+            decimal overallScore = ageScore
                                  + incomeLevelScore
                                  + rentalRateScore
                                  + walkScoreScore

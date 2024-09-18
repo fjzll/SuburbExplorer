@@ -27,13 +27,17 @@ namespace SuburbExplorer.Controllers
         {
             // look up the state code and suburb code
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
-            List<int?> mediumHousehouldIncomeAndRentList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
+            List<int?> mediumHousehouldIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
             List<int?> tenureRentedAndTotalList = await apiService.GetRentedTypeAndTotalAsync(suburbName, stateName);
             // string response = await service.Get();
             searchView.EntryABSdata.Text = 
-                $"Suburb code: {suburbCode} || State code: {stateCode} ||" +
-                $"Medium rent: {mediumHousehouldIncomeAndRentList[0]} || Medium income: {mediumHousehouldIncomeAndRentList[1]} ||" +
-                $"Rented household: {tenureRentedAndTotalList[0]} || Total dwellings: {tenureRentedAndTotalList[1]} ||";
+                $"Suburb code: {suburbCode} || " + 
+                $"State code: {stateCode} || " +
+                $"Medium age: {mediumHousehouldIncomeAndRentAndAgeList[0]} || " + 
+                $"Medium income: {mediumHousehouldIncomeAndRentAndAgeList[1]} || " +
+                $"Medium rent: {mediumHousehouldIncomeAndRentAndAgeList[2]} ||"+
+                $"Rented household: {tenureRentedAndTotalList[0]} || " +
+                $"Total dwellings: {tenureRentedAndTotalList[1]} || ";
         }
 
     }

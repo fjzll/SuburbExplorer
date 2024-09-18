@@ -28,7 +28,7 @@ namespace SuburbExplorer.Services
 
             //Form a request
             string dataflow = "C21_G02_SAL/";
-            string fullURLSuburbName = $"{baseURL}{dataflow}4+6.{suburbCode}.SAL.{stateCode}";
+            string fullURLSuburbName = $"{baseURL}{dataflow}1+4+6.{suburbCode}.SAL.{stateCode}";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, fullURLSuburbName);
             request.Headers.Add("x-api-key", apiKey);
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.sdmx.data+json"));
@@ -46,16 +46,16 @@ namespace SuburbExplorer.Services
             string responseString = await response.Content.ReadAsStringAsync();
 
             //convert to C# object
-            APIResponseMedIncomeAndRent? responseMedIncomeAndRent = JsonConvert.DeserializeObject<APIResponseMedIncomeAndRent>(responseString);
+            APIResponseMedIncomeAndRentAndAge? responseMedIncomeAndRentAndAge = JsonConvert.DeserializeObject<APIResponseMedIncomeAndRentAndAge>(responseString);
             var observations_list = new List<int?>();
 
             //Extract the obs value
-            if(responseMedIncomeAndRent?.data?.dataSets != null)
+            if(responseMedIncomeAndRentAndAge?.data?.dataSets != null)
             {
-                var series = responseMedIncomeAndRent.data.dataSets[0].series;
+                var series = responseMedIncomeAndRentAndAge.data.dataSets[0].series;
                 if (series != null)
                 {
-                    var seriesKeys = new[] { "0:0:0:0", "1:0:0:0" };
+                    var seriesKeys = new[] { "0:0:0:0", "1:0:0:0", "2:0:0:0" };
                     foreach (var key in seriesKeys)
                     {
                         var observations = series[key].observations;
