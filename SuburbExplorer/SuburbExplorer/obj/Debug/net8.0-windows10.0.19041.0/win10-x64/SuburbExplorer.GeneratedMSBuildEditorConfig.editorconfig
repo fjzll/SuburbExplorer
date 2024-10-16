@@ -42,8 +42,26 @@ build_metadata.AdditionalFiles.ManifestResourceName = SuburbExplorer.Resources.S
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/admin/Desktop/Mobile Dev/Assessments/part2/SuburbExplorer/SuburbExplorer/Views/FavoritesView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SuburbExplorer.Views.FavoritesView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FavoritesView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FavoritesView.xaml
+
+[C:/Users/admin/Desktop/Mobile Dev/Assessments/part2/SuburbExplorer/SuburbExplorer/Views/HelpView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SuburbExplorer.Views.HelpView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HelpView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HelpView.xaml
+
 [C:/Users/admin/Desktop/Mobile Dev/Assessments/part2/SuburbExplorer/SuburbExplorer/Views/SearchView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SuburbExplorer.Views.SearchView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SearchView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SearchView.xaml
+
+[C:/Users/admin/Desktop/Mobile Dev/Assessments/part2/SuburbExplorer/SuburbExplorer/Views/SettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SuburbExplorer.Views.SettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsView.xaml

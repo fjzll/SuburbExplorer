@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SuburbExplorer.Views.SettingsView"
+             Title="SettingsView"
+             x:Name="SettingsPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Settings Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="EntryName" Placeholder="Enter Your Name" Margin="50"/>
+        <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label x:Name="LabelTheme" Text="Light" VerticalTextAlignment="Center"/>
+            <Switch x:Name="SwitchTheme" Toggled="SwitchTheme_Toggled"/>
+        </HorizontalStackLayout>
+        <Button Text="Save" Clicked="Button_Clicked" Margin="50"/>
+    </VerticalStackLayout>
+</ContentPage>

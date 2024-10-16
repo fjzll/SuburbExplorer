@@ -7,10 +7,30 @@
     xmlns:views="clr-namespace:SuburbExplorer.Views" 
     Shell.FlyoutBehavior="Disabled"
     Title="SuburbExplorer">
-
-    <ShellContent
+    <TabBar>
+        <Tab Title="Search" Icon="search_icon.png">
+            <ShellContent
         Title="Search"
         ContentTemplate="{DataTemplate views:SearchView}"
         Route="SearchView" />
-
+        </Tab>
+        <Tab Title="Favorites" Icon="favorite_icon.png">
+            <ShellContent
+        Title="Favorites"
+        ContentTemplate="{DataTemplate views:FavoritesView}"
+        Route="FavoritesView" />
+        </Tab>
+        <Tab Title="Help" Icon="help_icon.png">
+            <ShellContent
+        Title="Help"
+        ContentTemplate="{DataTemplate views:HelpView}"
+        Route="HelpView" />
+        </Tab>
+        <Tab Title="Settings" Icon="settings_icon.png">
+            <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate views:SettingsView}"
+        Route="SettingsView" />
+        </Tab>
+    </TabBar>
 </Shell>
