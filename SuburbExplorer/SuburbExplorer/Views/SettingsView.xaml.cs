@@ -9,13 +9,13 @@ public partial class SettingsView : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-		Preferences.Set(PreferencesTypes.UserName.ToString(), EntryName.Text);
+		//Preferences.Set(PreferencesTypes.UserName.ToString(), EntryName.Text);
 		Preferences.Set(PreferencesTypes.ThemeLight.ToString(), SwitchTheme.IsToggled);
     }
 
 	private void UpdateUI()
 	{
-		EntryName.Text = Preferences.Get(PreferencesTypes.UserName.ToString(), "New User");
+		//EntryName.Text = Preferences.Get(PreferencesTypes.UserName.ToString(), "New User");
 		SwitchTheme.IsToggled = Preferences.Get(PreferencesTypes.ThemeLight.ToString(), true);
 		string theme = SwitchTheme.IsToggled ? "Light" : "Gray";
 		LabelTheme.Text = $"Theme {theme}";

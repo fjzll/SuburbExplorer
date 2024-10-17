@@ -11,6 +11,13 @@ build_property.RootNamespace = SuburbExplorer
 build_property.ProjectDir = C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
 
 [C:/Users/admin/Desktop/Mobile Dev/Assessments/part2/SuburbExplorer/SuburbExplorer/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

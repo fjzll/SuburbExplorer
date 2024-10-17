@@ -12,20 +12,20 @@
   <Properties>
     <DisplayName>SuburbExplorer</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>
-    <Logo>appiconStoreLogo.png</Logo>
+    <Logo>homeStoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
     <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
-    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.3" MinVersion="3000.934.1904.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.5" MinVersion="5001.178.1908.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="SuburbExplorer.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="SuburbExplorer" Description="SuburbExplorer" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="SuburbExplorer">
+      <uap:VisualElements DisplayName="SuburbExplorer" Description="SuburbExplorer" Square150x150Logo="homeMediumTile.png" Square44x44Logo="homeLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="homeSmallTile.png" Wide310x150Logo="homeWideTile.png" Square310x310Logo="homeLargeTile.png" ShortName="SuburbExplorer">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
@@ -39,7 +39,7 @@
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
   <build:Metadata>
-    <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="3.0.0.2307" />
+    <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="3.0.0.2406" />
     <build:Item Name="makepri.exe" Version="10.0.22621.755 (WinBuild.160101.0800)" />
   </build:Metadata>
 </Package>

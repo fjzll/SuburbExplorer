@@ -6,14 +6,28 @@
              x:Name="SettingsPage">
     <VerticalStackLayout>
         <Label 
-            Text="Settings Page"
+            Text="Change Your Settings"
+            FontSize="Large"
+            Margin="30"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Entry x:Name="EntryName" Placeholder="Enter Your Name" Margin="50"/>
-        <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label x:Name="LabelTheme" Text="Light" VerticalTextAlignment="Center"/>
-            <Switch x:Name="SwitchTheme" Toggled="SwitchTheme_Toggled"/>
+        <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="280">
+            <Label x:Name="LabelTheme" Text="Dark Mode" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+            <Switch x:Name="SwitchTheme" Toggled="SwitchTheme_Toggled" Margin="50, 0, 0, 0"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="280">
+            <Label x:Name="LabelFontSize" Text="Font Size" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+            <Picker x:Name="PickerFontSize" Title="Select Font Size" HorizontalTextAlignment="End" Margin="70, 0, 0, 0">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Small</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>Large</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
         </HorizontalStackLayout>
         <Button Text="Save" Clicked="Button_Clicked" Margin="50"/>
+            
     </VerticalStackLayout>
 </ContentPage>
