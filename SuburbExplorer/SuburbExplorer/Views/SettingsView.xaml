@@ -17,7 +17,7 @@
         </HorizontalStackLayout>
         <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="280">
             <Label x:Name="LabelFontSize" Text="Font Size" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
-            <Picker x:Name="PickerFontSize" Title="Select Font Size" HorizontalTextAlignment="End" Margin="70, 0, 0, 0">
+            <Picker x:Name="PickerFontSize" Title="Select Font Size" SelectedIndexChanged="PickerFontSize_SelectedIndexChanged" HorizontalTextAlignment="End" Margin="70, 0, 0, 0">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Small</x:String>
