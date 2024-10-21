@@ -2,22 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuburbExplorer.Views.SettingsView"
-             Title="SettingsView"
+             Title="Settings"
              x:Name="SettingsPage">
     <VerticalStackLayout>
         <Label 
             Text="Change Your Settings"
-            FontSize="Large"
+            FontAttributes="Bold"
             Margin="30"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="280">
-            <Label x:Name="LabelTheme" Text="Dark Mode" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+            HorizontalOptions="Center" 
+            TextColor="DarkBlue"/>
+        <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="250">
+            <Label x:Name="LabelTheme" Text="Dark Mode" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" WidthRequest="120"/>
             <Switch x:Name="SwitchTheme" Toggled="SwitchTheme_Toggled" Margin="50, 0, 0, 0"/>
         </HorizontalStackLayout>
-        <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="280">
-            <Label x:Name="LabelFontSize" Text="Font Size" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
-            <Picker x:Name="PickerFontSize" Title="Select Font Size" SelectedIndexChanged="PickerFontSize_SelectedIndexChanged" HorizontalTextAlignment="End" Margin="70, 0, 0, 0">
+        <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="250">
+            <Label x:Name="LabelFontSize" Text="Font Size" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" WidthRequest="120"/>
+            <Picker x:Name="PickerFontSize" Title="Select Font Size" SelectedIndexChanged="PickerFontSize_SelectedIndexChanged" HorizontalTextAlignment="Start" Margin="50, 0, 0, 0" WidthRequest="80">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Small</x:String>
@@ -27,7 +28,7 @@
                 </Picker.ItemsSource>
             </Picker>
         </HorizontalStackLayout>
-        <Button Text="Save" Clicked="Button_Clicked" Margin="50"/>
+        <Button Text="Save" Clicked="Button_Clicked" Margin="20, 50, 20, 0"/>
             
     </VerticalStackLayout>
 </ContentPage>

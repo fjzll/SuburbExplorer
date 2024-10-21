@@ -33,10 +33,10 @@ public partial class SettingsView : ContentPage
 		switch (selectedFontSize)
 		{
 			case "Small":
-				fontSize = 12;
+				fontSize = 14;
 				break;
 			case "Medium":
-				fontSize = 14;
+				fontSize = 16;
 				break;
 			case "Large":
 				fontSize = 20;
