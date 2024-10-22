@@ -10,7 +10,7 @@
             FontSize="Large"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <ListView x:Name="ListViewFavoriteSuburbs">
+        <ListView x:Name="ListViewFavoriteSuburbs" x:FieldModifier="public">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding SuburbName}" Detail="{Binding Score}"/>

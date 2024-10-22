@@ -11,14 +11,12 @@ namespace SuburbExplorer.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public int Suburb_Code {  get; set; }
-        public string Suburb_Name { get; set; }
-        public int State_Code { get; set; }
-        public string State_Name { get; set;}
-
-        // public int Postcode { get; set; }
-        // public bool IsFavorite { get; set; }
-        // public int Score { get; set; }
+        public int SuburbCode {  get; set; }
+        public string? SuburbName { get; set; }
+        public int StateCode { get; set; }
+        public string? StateName { get; set;}
+        public bool IsFavorite { get; set; }
+        public decimal SuburbScore { get; set; }
 
     }
 }

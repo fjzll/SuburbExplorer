@@ -13,7 +13,7 @@ namespace SuburbExplorer.Models
         public int Id { get; set; }
         public string SuburbName { get; set; }
         public string StateName { get; set; }
-        public int Score { get; set; }
+        public decimal Score { get; set; }
 
     }
 }

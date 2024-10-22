@@ -8,11 +8,10 @@ namespace SuburbExplorer.Models
 {
     public class DemographicData
     {
-        //Data from ABS API and Walk Score API
+        //Data from ABS API 
         public MedianAge? MedianAge { get; set; }
         public IncomeLevel? IncomeLevel { get; set; }
         public RentalRate? RentalRate { get; set; }
-        public WalkScore? WalkScore { get; set; }
         public RentalYield? RentalYield { get; set; }
 
 
@@ -35,16 +34,16 @@ namespace SuburbExplorer.Models
 
         public decimal CalculateIncomeLevelScore(IncomeLevel incomeLevel)
         {
-            decimal incomeLevelComparation = incomeLevel.IncomeHousehold / incomeLevel.IncomeHouseholdState;
-            return incomeLevelComparation switch
+            //Calculate the percentage difference between suburb income level and the state income level
+            decimal incomeLevelComparation = (incomeLevel.IncomeHousehold - incomeLevel.IncomeHouseholdState)/ incomeLevel.IncomeHouseholdState;
+            if (incomeLevelComparation >= -0.1m)
             {
-                decimal n when (n >= 1.2m) => baseScore,
-                decimal n when (n >= 1.1m && n < 1.2m) => baseScore * 0.8m,
-                decimal n when (n >= 1m && n < 1.1m) => baseScore * 0.6m,
-                decimal n when (n >= 0.9m && n < 1m) => baseScore * 0.4m,
-                decimal n when (n >= 0.8m && n < 0.9m) => baseScore * 0.2m,
-                decimal n when (n < 0.8m) => 0m,
-            };
+                return baseScore;
+            }
+            else 
+            {
+                return 0m;
+            }
         }
 
         public decimal CalculateRentalRateScore(RentalRate rentalRate)
@@ -78,33 +77,16 @@ namespace SuburbExplorer.Models
             else { return 0m;}
         }
 
-        public decimal CalculateWalkScore (WalkScore walkScore)
-        {
-            if (walkScore.WalkScoreSuburb >= 70) 
-            { 
-                return baseScore;
-            }
-            else if (walkScore.WalkScoreSuburb >= 50 && walkScore.WalkScoreSuburb < 70)
-            {
-                return baseScore * 0.5m;
-            }
-            else
-            {
-                return 0m;
-            }
-        }
 
-        public decimal CalculateOverallScore()
+        public decimal CalculateOverallScore(MedianAge medianAge, IncomeLevel incomeLevel, RentalRate rentalRate, RentalYield rentalYield)
         {
-            decimal ageScore = CalculateAgeScore(MedianAge);
-            decimal incomeLevelScore = CalculateIncomeLevelScore(IncomeLevel);
-            decimal rentalRateScore = CalculateRentalRateScore(RentalRate);
-            decimal walkScoreScore = CalculateWalkScore(WalkScore);
-            decimal rentalYielScore = CalculateRentalYieldScore(RentalYield);
+            decimal ageScore = CalculateAgeScore(medianAge);
+            decimal incomeLevelScore = CalculateIncomeLevelScore(incomeLevel);
+            decimal rentalRateScore = CalculateRentalRateScore(rentalRate);
+            decimal rentalYielScore = CalculateRentalYieldScore(rentalYield);
             decimal overallScore = ageScore
                                  + incomeLevelScore
-                                 + rentalRateScore
-                                 + walkScoreScore
+                                 + rentalRateScore                               
                                  + rentalYielScore;
             return overallScore;
 

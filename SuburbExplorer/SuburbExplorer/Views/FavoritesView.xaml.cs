@@ -14,7 +14,8 @@ public partial class FavoritesView : ContentPage
 	protected override async void OnAppearing()
 	{
 		base.OnAppearing();
-		List<FavoriteSuburb> favoriteSuburbs = await App.SqlService.GetFavoriteSuburbsAsync();
+		SQLService sqlService = App.SqlService;
+		List<FavoriteSuburb> favoriteSuburbs = await sqlService.GetFavoriteSuburbsAsync();
 		if (favoriteSuburbs != null)
 		{
 			await DisplayAlert("No Favorites", "You have no favorite suburbs saved.", "Ok");

@@ -22,4 +22,10 @@ public partial class SearchView : ContentPage
     {
         await searchController.UpdateSearchUIAsync(EntrySuburb.Text.Trim(), (string)PickerState.SelectedItem);
     }
+
+    private async void ButtonSaveAsFavorite_Clicked(object sender, EventArgs e)
+    {
+		await searchController.SaveAsFavoriteSuburb(EntrySuburb.Text.Trim());
+
+    }
 }

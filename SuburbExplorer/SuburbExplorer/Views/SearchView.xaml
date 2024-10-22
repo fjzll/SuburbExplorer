@@ -54,7 +54,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="ButtonSaveAsFavorite" Text="Save As Favorite" WidthRequest="200" Margin="20,20,20,20" />
+            <Button x:Name="ButtonSaveAsFavorite" x:FieldModifier="public" Text="Save As Favorite" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSaveAsFavorite_Clicked" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

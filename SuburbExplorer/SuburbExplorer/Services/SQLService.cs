@@ -23,7 +23,7 @@ namespace SuburbExplorer.Services
             return await database.Table<FavoriteSuburb>().ToListAsync();
         }
 
-        public async Task<int> AddFavoriteSuburb(FavoriteSuburb suburb)
+        public async Task<int> AddFavoriteSuburbAsync(FavoriteSuburb suburb)
         {
             if (suburb.Id != 0)
             {
@@ -36,7 +36,7 @@ namespace SuburbExplorer.Services
 
         }
 
-        public async Task<int> DeleteFavoriteSuburb(FavoriteSuburb suburb)
+        public async Task<int> DeleteFavoriteSuburbAsync(FavoriteSuburb suburb)
         {
             return await database.DeleteAsync(suburb);
         }
