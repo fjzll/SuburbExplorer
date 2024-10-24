@@ -108,24 +108,21 @@ namespace SuburbExplorer.Controllers
             searchView.ListViewDemographicData.ItemsSource = demographicDataList;
         }
 
-        public async Task UpdateFavoriteSuburb()
+
+        public async Task SaveAsFavoriteSuburb(string suburbName, string stateName)
         {
-            favoritesView.ListViewFavoriteSuburbs.ItemsSource = null;
-            favoritesView.ListViewFavoriteSuburbs.ItemsSource = await sqlService.GetFavoriteSuburbsAsync();
-        }
-        public async Task SaveAsFavoriteSuburb(string suburbName)
-        {
-            DemographicData demographicData = new DemographicData();
-            decimal suburbScore = demographicData.CalculateOverallScore();
-            FavoriteSuburb newFavoriteSuburb = new FavoriteSuburb()
-            {
-                SuburbName = suburbName,
-                Score = suburbScore,
-            };
-            int result = await sqlService.AddFavoriteSuburbAsync(newFavoriteSuburb);
+            // Set properties of the suburb when Save As Favorite button is clicked
+            suburb.IsFavorite = true;
+            suburb.SuburbName = suburbName;
+            suburb.StateName = stateName;
+            suburb.SuburbScore = await CalculateSuburbScoreAynsc(suburbName, stateName);
+            // look up the state code and suburb code
+            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+            suburb.SuburbCode = suburbCode;
+            suburb.StateCode = stateCode;
+            int result = await sqlService.AddFavoriteSuburbAsync(suburb);
             if (result == 1)
             {
-                await UpdateFavoriteSuburb();
                 searchView.ButtonSaveAsFavorite.IsEnabled = false;
                
             }

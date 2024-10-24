@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuburbExplorer.Views.HelpView"
              Title="Help">
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
         <Label 
             Text="Need Help? Contact Us"
             FontAttributes="Bold"
@@ -23,11 +23,11 @@
                     <ColumnDefinition Width="4*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Row="0" Grid.Column="0" Text="Name:" VerticalTextAlignment="Center"/>
-                <Entry Grid.Column="1" Grid.Row="0" x:Name="EntryUserName" VerticalTextAlignment="Center" Placeholder="Enter your name "/>
+                <Entry Grid.Column="1" Grid.Row="0" x:Name="EntryUserName" VerticalTextAlignment="Center" Placeholder="Enter your name " Margin="10"/>
                 <Label Grid.Row="1" Grid.Column="0" Text="Email:" VerticalTextAlignment="Center"/>
-                <Entry Grid.Row="1" Grid.Column="1"  x:Name="EntryUserEmail" Placeholder="Enter your email" VerticalTextAlignment="Center"/>
+                <Entry Grid.Row="1" Grid.Column="1"  x:Name="EntryUserEmail" Placeholder="Enter your email" VerticalTextAlignment="Center" Margin="10"/>
                 <Label Grid.Row="2" Grid.Column="0"  Text="Message: " VerticalOptions="Center" VerticalTextAlignment="Center"/>
-                <Editor Grid.Row="2" Grid.Column="1"  x:Name="EditorUserMessage" Placeholder="Write your message" VerticalOptions="Center" VerticalTextAlignment="Center" HeightRequest="100"/>
+                <Editor Grid.Row="2" Grid.Column="1"  x:Name="EditorUserMessage" Placeholder="Write your message" VerticalOptions="Center" VerticalTextAlignment="Center" HeightRequest="100" Margin="10"/>
                 <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" x:Name="ButtonContactForm" Text="Send" Margin="0,20,0,0" Clicked="ButtonContactForm_Clicked"/>
             </Grid>
         </ScrollView>

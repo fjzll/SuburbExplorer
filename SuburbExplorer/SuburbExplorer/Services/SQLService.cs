@@ -13,17 +13,18 @@ namespace SuburbExplorer.Services
         SQLiteAsyncConnection database;
         public SQLService(string databasePath)
         {
+            // Initialize the database and create the suburb table
             database = new SQLiteAsyncConnection(databasePath);
-            database.CreateTableAsync<FavoriteSuburb>().Wait();
+            database.CreateTableAsync<Suburb>().Wait();
 
         }
 
-        public async Task<List<FavoriteSuburb>> GetFavoriteSuburbsAsync()
+        public async Task<List<Suburb>> GetFavoriteSuburbsAsync()
         {
-            return await database.Table<FavoriteSuburb>().ToListAsync();
+            return await database.Table<Suburb>().ToListAsync();
         }
 
-        public async Task<int> AddFavoriteSuburbAsync(FavoriteSuburb suburb)
+        public async Task<int> AddFavoriteSuburbAsync(Suburb suburb)
         {
             if (suburb.Id != 0)
             {
@@ -35,11 +36,15 @@ namespace SuburbExplorer.Services
             }
 
         }
-
-        public async Task<int> DeleteFavoriteSuburbAsync(FavoriteSuburb suburb)
+        
+        /* ToDo
+        public async Task<int> DeleteFavoriteSuburbAsync(string suburbName, string stateName)
         {
-            return await database.DeleteAsync(suburb);
+            
+            //var suburbToDelete = await database.Table<Suburb>().Where(s => s.SuburbName == suburbName && s.StateName == stateName);
+            //return await database.DeleteAsync(suburbToDelete);
         }
+        */
 
         
   

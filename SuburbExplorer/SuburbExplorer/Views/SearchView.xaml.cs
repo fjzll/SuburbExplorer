@@ -26,7 +26,7 @@ public partial class SearchView : ContentPage
 
     private async void ButtonSaveAsFavorite_Clicked(object sender, EventArgs e)
     {
-		await searchController.SaveAsFavoriteSuburb(EntrySuburb.Text.Trim());
+		await searchController.SaveAsFavoriteSuburb(EntrySuburb.Text.Trim(), (string)PickerState.SelectedItem);
 
     }
 }

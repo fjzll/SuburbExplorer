@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-23T14:30:32.314</Modified>
+      <Modified>2024-10-24T07:27:51.253</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.dll">
       <PackagePath>SuburbExplorer.dll</PackagePath>
-      <Modified>2024-10-23T14:30:31.701</Modified>
+      <Modified>2024-10-24T07:27:50.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SuburbExplorer.exe</PackagePath>
-      <Modified>2024-10-23T14:30:31.709</Modified>
+      <Modified>2024-10-24T07:27:50.698</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

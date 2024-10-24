@@ -4,7 +4,7 @@
              x:Class="SuburbExplorer.Views.SettingsView"
              Title="Settings"
              x:Name="SettingsPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
         <Label 
             Text="Change Your Settings"
             FontAttributes="Bold"

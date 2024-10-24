@@ -10,12 +10,36 @@
             FontSize="Large"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <ListView x:Name="ListViewFavoriteSuburbs" x:FieldModifier="public">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding SuburbName}" Detail="{Binding Score}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <VerticalStackLayout Margin="100, 20, 100, 0">
+            <Grid HorizontalOptions="FillAndExpand" Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Suburb Name" FontAttributes="Bold" FontSize="Micro"/>
+                <Label Grid.Column="1" Text="State Name" FontAttributes="Bold" FontSize="Micro"/>
+                <Label Grid.Column="2" Text="Suburb Score" FontAttributes="Bold" FontSize="Micro"/>
+            </Grid>
+            <ListView x:Name="ListViewFavoriteSuburbs" x:FieldModifier="public" HorizontalOptions="FillAndExpand" SelectedItem="{Binding SelectedSuburb}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding SuburbName}"/>
+                                <Label Grid.Column="1" Text="{Binding StateName}"/>
+                                <Label Grid.Column="2" Text="{Binding SuburbScore}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Margin="0, 100, 0, 0" Text="Delete suburb" VerticalOptions="End" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
