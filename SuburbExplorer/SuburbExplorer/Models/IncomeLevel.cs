@@ -8,7 +8,7 @@ namespace SuburbExplorer.Models
 {
     public class IncomeLevel
     {
-        public decimal IncomeHousehold {  get; set; }
-        public decimal IncomeHouseholdState { get; set;}
+        public int IncomeHousehold {  get; set; }
+        public int IncomeHouseholdState { get; set;}
     }
 }

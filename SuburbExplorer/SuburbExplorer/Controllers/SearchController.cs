@@ -20,6 +20,7 @@ namespace SuburbExplorer.Controllers
         public SQLService sqlService;
         public Suburb suburb;
         public DemographicData demographicData;
+        public List<DemographicData> demographicDataList {  get; set; }
 
         public SearchController(SearchView view) 
         {
@@ -29,27 +30,52 @@ namespace SuburbExplorer.Controllers
             favoritesView = new FavoritesView();
             apiService = new APIService();
             excelService = new ExcelService();
-            SQLService sqlService = App.SqlService;
+            sqlService = App.SqlService;
+            demographicDataList = new List<DemographicData>();
         }
 
-        //ToDo
-        public async Task CalculateSuburbScore(string suburbName, string stateName)
+        // Fetch data from ABS API and Calculate the suburb score
+        public async Task<int> CalculateSuburbScoreAynsc(string suburbName, string stateName)
         {
+            // Initialise demographic data classes
+            demographicData.MedianAge = new MedianAge();
+            demographicData.IncomeLevel = new IncomeLevel();
+            demographicData.RentalYield = new RentalYield();
+            demographicData.RentalRate = new RentalRate();
+
+            // Assign the state values for household income, rental rate, rental yield
+            demographicData.IncomeLevel.IncomeHouseholdState = 1507;
+            demographicData.RentalRate.RentalRateState = 0.306m;
+            demographicData.RentalYield.MedianRentState = 375;
+
             // look up the state code and suburb code
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
-            List<int?> mediumHousehouldIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
-            int? mediumAge = mediumHousehouldIncomeAndRentAndAgeList[0];
-            int? householdIncome = mediumHousehouldIncomeAndRentAndAgeList[1];
-            int? mediumRent = mediumHousehouldIncomeAndRentAndAgeList[2];
+
+            // Get median household income, rent and age and assign to demographic data 
+            List<int?> medianHouseholdIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
+            demographicData.MedianAge.Age = medianHouseholdIncomeAndRentAndAgeList[0] ?? 0;
+            demographicData.IncomeLevel.IncomeHousehold = medianHouseholdIncomeAndRentAndAgeList[1] ?? 0;
+            demographicData.RentalYield.MedianRentSuburb = medianHouseholdIncomeAndRentAndAgeList[2] ?? 0;
+
+            // Get rented household numbers and total dwellings, calculate the rented rate
             List<int?> tenureRentedAndTotalList = await apiService.GetRentedTypeAndTotalAsync(suburbName, stateName);
             int? rentedHouseholdNumber = tenureRentedAndTotalList[0];
             int? totalDwellings = tenureRentedAndTotalList[1];
-            decimal rentedRate = Convert.ToDecimal(rentedHouseholdNumber) / Convert.ToDecimal(totalDwellings);
-            suburb.SuburbScore = demographicData.CalculateOverallScore(); 
-            
+            demographicData.RentalRate.RentalRateSuburb = (totalDwellings != 0)? 
+                Math.Round(Convert.ToDecimal(rentedHouseholdNumber) / Convert.ToDecimal(totalDwellings), 3)
+                : 0m;
+
+            // Add the demographic data to the list
+            demographicDataList.Clear();
+            demographicDataList.Add(demographicData);
+
+            // Calculate the suburb Score
+            suburb.SuburbScore = demographicData.CalculateOverallScore();        
+            return suburb.SuburbScore;
         }
         public async Task UpdateSearchUIAsync(string suburbName, string stateName)
         {
+            /* Test the output
             // look up the state code and suburb code
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
             List<int?> mediumHousehouldIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
@@ -63,6 +89,23 @@ namespace SuburbExplorer.Controllers
                 $"Medium rent: {mediumHousehouldIncomeAndRentAndAgeList[2]} ||"+
                 $"Rented household: {tenureRentedAndTotalList[0]} || " +
                 $"Total dwellings: {tenureRentedAndTotalList[1]} || ";
+            */
+            // Display the Score
+            int suburbScore = await CalculateSuburbScoreAynsc(suburbName, stateName);
+            if (suburbScore >= 75)
+            {
+                searchView.EntryABSdata.BackgroundColor = Colors.Green;
+            }
+            else if (suburbScore < 75 && suburbScore >= 50) 
+            {
+                searchView.EntryABSdata.BackgroundColor = Colors.Orange;
+            }
+            else { searchView.EntryABSdata.BackgroundColor = Colors.Red; }
+            searchView.EntryABSdata.Text = suburbScore.ToString();
+
+            // Display the listview with demographic data. Data binding in ListView
+            searchView.ListViewDemographicData.ItemsSource = null;
+            searchView.ListViewDemographicData.ItemsSource = demographicDataList;
         }
 
         public async Task UpdateFavoriteSuburb()

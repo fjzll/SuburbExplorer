@@ -14,80 +14,66 @@ namespace SuburbExplorer.Models
         public RentalRate? RentalRate { get; set; }
         public RentalYield? RentalYield { get; set; }
 
+        public const int BASE_SCORE = 25;
 
-        public decimal baseScore = 20;
 
-
-        public decimal CalculateAgeScore(MedianAge medianAge)
+        public int CalculateAgeScore(MedianAge medianAge)
         {
             int minAge = 35;
             int maxAge = 54;
             if (medianAge.Age >= minAge && medianAge.Age <= maxAge)
             {
-                return baseScore;
+                return BASE_SCORE;
             }
             else
             {
-                return 0m;
+                return 0;
             }
         }
 
-        public decimal CalculateIncomeLevelScore(IncomeLevel incomeLevel)
+        public int CalculateIncomeLevelScore(IncomeLevel incomeLevel)
         {
-            //Calculate the percentage difference between suburb income level and the state income level
-            decimal incomeLevelComparation = (incomeLevel.IncomeHousehold - incomeLevel.IncomeHouseholdState)/ incomeLevel.IncomeHouseholdState;
-            if (incomeLevelComparation >= -0.1m)
+            if (incomeLevel.IncomeHousehold >= incomeLevel.IncomeHouseholdState * 0.9)
             {
-                return baseScore;
+                return BASE_SCORE;
             }
             else 
             {
-                return 0m;
+                return 0;
             }
         }
 
-        public decimal CalculateRentalRateScore(RentalRate rentalRate)
+        public int CalculateRentalRateScore(RentalRate rentalRate)
         {
             decimal rentalRateComparation = rentalRate.RentalRateSuburb / rentalRate.RentalRateState;
-            if (rentalRateComparation <= 1.1m && rentalRateComparation >= 0.9m)
+            if (rentalRateComparation <= 1.2m && rentalRateComparation >= 0.8m)
             {
-                return baseScore;
+                return BASE_SCORE;
             }
-            else if ((rentalRateComparation > 1.1m && rentalRateComparation <= 1.2m) || 
-                     (rentalRateComparation < 0.9m && rentalRateComparation >= 0.8m))
-            {
-                return baseScore * 0.5m;
-            }
-            else { return 0m; }
+            
+            else { return 0; }
         }
 
-        public decimal CalculateRentalYieldScore (RentalYield rentalYield)
+        public int CalculateRentalYieldScore (RentalYield rentalYield)
         {
-            decimal rentalScore = rentalYield.MedianRentSuburb / rentalYield.MedianRentState;
-            decimal affordablityScore = rentalYield.PercentageOfRenterPayingLessThan30Percent / rentalYield.PercentageOfRenterPayingLessThan30PercentState;
-            decimal rentalYieldComparation = (rentalScore + affordablityScore) / 2 * 100;
-            if (rentalYieldComparation >= 100)
+            if (rentalYield.MedianRentSuburb >= rentalYield.MedianRentState)
             {
-                return baseScore;
+                return BASE_SCORE;
             }
-            else if (rentalYieldComparation <100 && rentalYieldComparation >= 90)
-            {
-                return baseScore * 0.8m;
-            }
-            else { return 0m;}
+            else { return 0;}
         }
 
 
-        public decimal CalculateOverallScore(MedianAge medianAge, IncomeLevel incomeLevel, RentalRate rentalRate, RentalYield rentalYield)
+        public int CalculateOverallScore()
         {
-            decimal ageScore = CalculateAgeScore(medianAge);
-            decimal incomeLevelScore = CalculateIncomeLevelScore(incomeLevel);
-            decimal rentalRateScore = CalculateRentalRateScore(rentalRate);
-            decimal rentalYielScore = CalculateRentalYieldScore(rentalYield);
-            decimal overallScore = ageScore
+            int ageScore = MedianAge != null ? CalculateAgeScore(MedianAge) : 0;
+            int incomeLevelScore = IncomeLevel!= null? CalculateIncomeLevelScore(IncomeLevel) : 0;
+            int rentalRateScore = RentalRate != null ? CalculateRentalRateScore(RentalRate) : 0;
+            int rentalYieldScore = RentalYield != null ? CalculateRentalYieldScore(RentalYield) : 0;
+            int overallScore = ageScore
                                  + incomeLevelScore
                                  + rentalRateScore                               
-                                 + rentalYielScore;
+                                 + rentalYieldScore;
             return overallScore;
 
         }

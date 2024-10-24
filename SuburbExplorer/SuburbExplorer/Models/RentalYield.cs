@@ -10,8 +10,7 @@ namespace SuburbExplorer.Models
     {
         public int MedianRentSuburb { get; set; }
         public int MedianRentState { get; set; }
-        public decimal PercentageOfRenterPayingLessThan30Percent { get; set; }
-        public decimal PercentageOfRenterPayingLessThan30PercentState { get; set; }
+
 
     }
 }

@@ -15,6 +15,7 @@ public partial class SearchView : ContentPage
 													 "Northern Territory", "Australian Capital Territory",
 													 "Other Territories"};
 		searchController = new SearchController(this);
+		BindingContext = searchController;
 	}
 
 

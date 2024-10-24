@@ -16,7 +16,7 @@ namespace SuburbExplorer.Models
         public int StateCode { get; set; }
         public string? StateName { get; set;}
         public bool IsFavorite { get; set; }
-        public decimal SuburbScore { get; set; }
+        public int SuburbScore { get; set; }
 
     }
 }

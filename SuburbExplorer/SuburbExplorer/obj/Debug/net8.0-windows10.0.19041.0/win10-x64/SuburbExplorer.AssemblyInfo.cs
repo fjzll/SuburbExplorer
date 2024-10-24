@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuburbExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c916ba8da714f6f6875ba3d3facaf049a6d3d4eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+df72f57a79991fa44bc841d232a0c81de01c3b27")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuburbExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuburbExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

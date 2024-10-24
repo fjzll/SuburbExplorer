@@ -5,52 +5,47 @@
              Title="Search">
     <ScrollView>
         <VerticalStackLayout>
-            <Label Text="Enter suburb name or postcode:" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" Margin="20, 50, 20, 20"/>
+            <Label Text="Enter suburb name" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Bold" Margin="20, 50, 20, 20"/>
             <Entry x:Name="EntrySuburb"  Placeholder="" VerticalOptions="Center" WidthRequest="300" HorizontalOptions="Center" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"  />
-            <Label Text="Pick the state:" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" Margin="20, 20, 20, 0" />
+            <Label Text="Choose the state:" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Bold" Margin="20, 20, 20, 0" />
             <Picker x:Name="PickerState" HorizontalOptions="Center" WidthRequest="300" Margin="0, 20"/>
             <Button x:Name="ButtonSearch" Text="Search" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSearch_Clicked" />
-            <ProgressBar x:Name="ProgressBarOverallScore" HeightRequest="50" ProgressColor="Yellow" WidthRequest="500" Margin="0, 20" Progress="0.5"/>
-            <Entry x:Name="EntryABSdata" Placeholder="" Margin="50" x:FieldModifier="public" HeightRequest="100"/>
-            <ListView x:Name="ListviewDemographicData" Margin="0" HeightRequest="200">
+            <Label Text="Suburb Score" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0"/>
+            <Entry x:Name="EntryABSdata" FontAttributes="Bold" FontSize="Medium" Placeholder="" Margin="20" x:FieldModifier="public" HeightRequest="100" WidthRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Text="Demographic details" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" Margin="20" />
+            <ListView x:Name="ListViewDemographicData" x:FieldModifier="public" HorizontalOptions="Center" WidthRequest="300">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Label Text="Suburb Name" Grid.Column="0" Grid.Row="0"/>
-                            <Label x:Name="LabelSuburbName" Text="{Binding Suburb.Name}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" />
-                            <Label Text="Category" Grid.Column="0" Grid.Row="1"/>
-                            <Label Text="Suburb" Grid.Column="1" Grid.Row="1"/>
-                            <Label Text="State" Grid.Column="2" Grid.Row="1"/>
-                            <Label Text="Age Distribution" Grid.Column="0" Grid.Row="2"/>
-                            <Label x:Name="LabelAgeDistributionSuburb" Text="{Binding AgeDistribution.AgeDistributionPercentageSuburb}" Grid.Column="1" Grid.Row="2"/>
-                            <Label x:Name="LabelAgeDistributionState" Text="{Binding AgeDistribution.AgeDistributionPercentageState}" Grid.Column="2" Grid.Row="2"/>
-                            <Label Text="Income Levels" Grid.Column="0" Grid.Row="3"/>
-                            <Label x:Name="LabelIncomeLevelsSuburb" Text="{Binding IncomeLevel.IncomeHousehold}" Grid.Column="1" Grid.Row="3"/>
-                            <Label x:Name="LabelIncomeLevelState" Text="{Binding IncomeLevel.IncomeHouseholdState}" Grid.Column="2" Grid.Row="3"/>
-                            <Label Text="Rental Rate" Grid.Column="0" Grid.Row="4"/>
-                            <Label x:Name="LabelRentalRateSuburb" Text="{Binding RentalRate.RentalRateSuburb}" Grid.Column="1" Grid.Row="4"/>
-                            <Label x:Name="LabelRentalRateState" Text="{Binding RentalRate.RentalRateState}" Grid.Column="2" Grid.Row="4"/>
-                            <Label Text="Walk Score" Grid.Column="0" Grid.Row="5"/>
-                            <Label x:Name="LabelWalkScoreSuburb" Text="{Binding WalkScore.WalkScoreSuburb}" Grid.Column="1" Grid.Row="5"/>
-                            <Label x:Name="LabelWalkScoreState" Text="Not Applicable" Grid.Column="2" Grid.Row="5"/>
-                            <Label Text="Rental Yield" Grid.Column="0" Grid.Row="6"/>
-                            <Label x:Name="LabelRentalYieldSuburb" Text="{Binding RentalYield.MedianRentSuburb}" Grid.Column="1" Grid.Row="6"/>
-                            <Label x:Name="LabelRentalYieldState" Text="{Binding RentalYield.MedianRentState}" Grid.Column="2" Grid.Row="6"/>
-                        </Grid>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Suburb" Grid.Column="1" Grid.Row="0" FontSize="Micro" />
+                                <Label Text="State" Grid.Column="2" Grid.Row="0" FontSize="Micro" />
+                                <Label Text="N/A"  Grid.Column="2" Grid.Row="1" FontSize="Micro" />
+                                <Label Text="Median Age" Grid.Column="0" Grid.Row="1" FontSize="Micro"/>
+                                <Label Text="Income Level" Grid.Column="0" Grid.Row="2" FontSize="Micro" />
+                                <Label Text="Rented Rate" Grid.Column="0" Grid.Row="3" FontSize="Micro"/>
+                                <Label Text="Rental Yield" Grid.Column="0" Grid.Row="4" FontSize="Micro"/>
+                                <Label Text="{Binding MedianAge.Age}" Grid.Column="1" Grid.Row="1" FontSize="Micro" />
+                                <Label Text="{Binding IncomeLevel.IncomeHousehold}" Grid.Column="1" Grid.Row="2" FontSize="Micro"/>
+                                <Label Text="{Binding IncomeLevel.IncomeHouseholdState}" Grid.Column="2" Grid.Row="2" FontSize="Micro"/>
+                                <Label Text="{Binding RentalRate.RentalRateSuburb}" Grid.Column="1" Grid.Row="3" FontSize="Micro"/>
+                                <Label Text="{Binding RentalRate.RentalRateState}" Grid.Column="2" Grid.Row="3" FontSize="Micro"/>
+                                <Label Text="{Binding RentalYield.MedianRentSuburb}" Grid.Column="1" Grid.Row="4" FontSize="Micro"/>
+                                <Label Text="{Binding RentalYield.MedianRentState}" Grid.Column="2" Grid.Row="4" FontSize="Micro"/>
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
