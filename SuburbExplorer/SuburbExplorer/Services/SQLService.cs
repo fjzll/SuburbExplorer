@@ -26,25 +26,27 @@ namespace SuburbExplorer.Services
 
         public async Task<int> AddFavoriteSuburbAsync(Suburb suburb)
         {
-            if (suburb.Id != 0)
-            {
-                return await database.UpdateAsync(suburb);
-            }
-            else 
-            {
-                return await database.InsertAsync(suburb);
-            }
+            return await database.InsertAsync(suburb);
 
         }
         
-        /* ToDo
+        public async Task<Suburb> CheckDuplicateFavoriteSuburbAsync(int suburbCode)
+        {
+            return await database.Table<Suburb>().Where(s => s.SuburbCode == suburbCode).FirstOrDefaultAsync();
+        } 
+
+        
         public async Task<int> DeleteFavoriteSuburbAsync(string suburbName, string stateName)
         {
             
-            //var suburbToDelete = await database.Table<Suburb>().Where(s => s.SuburbName == suburbName && s.StateName == stateName);
-            //return await database.DeleteAsync(suburbToDelete);
+            var suburbToDelete = await database.Table<Suburb>().Where(s => s.SuburbName == suburbName && s.StateName == stateName).FirstOrDefaultAsync();
+            if (suburbToDelete != null)
+            {
+                return await database.DeleteAsync(suburbToDelete);
+            }
+            return 0;
         }
-        */
+        
 
         
   

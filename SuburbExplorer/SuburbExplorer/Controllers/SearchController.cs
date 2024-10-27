@@ -8,6 +8,7 @@ using FavoritesView = SuburbExplorer.Views.FavoritesView;
 using SuburbExplorer.Services;
 using SuburbExplorer.Models;
 using System.Security.Cryptography.X509Certificates;
+//using Android.Views;
 
 namespace SuburbExplorer.Controllers
 {
@@ -35,43 +36,51 @@ namespace SuburbExplorer.Controllers
         }
 
         // Fetch data from ABS API and Calculate the suburb score
-        public async Task<int> CalculateSuburbScoreAynsc(string suburbName, string stateName)
+        public async Task CalculateSuburbScoreAynsc(string suburbName, string stateName)
         {
-            // Initialise demographic data classes
-            demographicData.MedianAge = new MedianAge();
-            demographicData.IncomeLevel = new IncomeLevel();
-            demographicData.RentalYield = new RentalYield();
-            demographicData.RentalRate = new RentalRate();
+            try
+            {
+                // Initialise demographic data classes
+                demographicData.MedianAge = new MedianAge();
+                demographicData.IncomeLevel = new IncomeLevel();
+                demographicData.RentalYield = new RentalYield();
+                demographicData.RentalRate = new RentalRate();
 
-            // Assign the state values for household income, rental rate, rental yield
-            demographicData.IncomeLevel.IncomeHouseholdState = 1507;
-            demographicData.RentalRate.RentalRateState = 0.306m;
-            demographicData.RentalYield.MedianRentState = 375;
+                // Assign the state values for household income, rental rate, rental yield
+                demographicData.IncomeLevel.IncomeHouseholdState = 1507;
+                demographicData.RentalRate.RentalRateState = 0.306m;
+                demographicData.RentalYield.MedianRentState = 375;
 
-            // look up the state code and suburb code
-            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+                // look up the state code and suburb code
+                var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
 
-            // Get median household income, rent and age and assign to demographic data 
-            List<int?> medianHouseholdIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
-            demographicData.MedianAge.Age = medianHouseholdIncomeAndRentAndAgeList[0] ?? 0;
-            demographicData.IncomeLevel.IncomeHousehold = medianHouseholdIncomeAndRentAndAgeList[1] ?? 0;
-            demographicData.RentalYield.MedianRentSuburb = medianHouseholdIncomeAndRentAndAgeList[2] ?? 0;
+                // Get median household income, rent and age and assign to demographic data 
+                List<int?> medianHouseholdIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
+                demographicData.MedianAge.Age = medianHouseholdIncomeAndRentAndAgeList[0] ?? 0;
+                demographicData.IncomeLevel.IncomeHousehold = medianHouseholdIncomeAndRentAndAgeList[1] ?? 0;
+                demographicData.RentalYield.MedianRentSuburb = medianHouseholdIncomeAndRentAndAgeList[2] ?? 0;
 
-            // Get rented household numbers and total dwellings, calculate the rented rate
-            List<int?> tenureRentedAndTotalList = await apiService.GetRentedTypeAndTotalAsync(suburbName, stateName);
-            int? rentedHouseholdNumber = tenureRentedAndTotalList[0];
-            int? totalDwellings = tenureRentedAndTotalList[1];
-            demographicData.RentalRate.RentalRateSuburb = (totalDwellings != 0)? 
-                Math.Round(Convert.ToDecimal(rentedHouseholdNumber) / Convert.ToDecimal(totalDwellings), 3)
-                : 0m;
+                // Get rented household numbers and total dwellings, calculate the rented rate
+                List<int?> tenureRentedAndTotalList = await apiService.GetRentedTypeAndTotalAsync(suburbName, stateName);
+                int? rentedHouseholdNumber = tenureRentedAndTotalList[0];
+                int? totalDwellings = tenureRentedAndTotalList[1];
+                demographicData.RentalRate.RentalRateSuburb = (totalDwellings != 0) ?
+                    Math.Round(Convert.ToDecimal(rentedHouseholdNumber) / Convert.ToDecimal(totalDwellings), 3)
+                    : 0m;
 
-            // Add the demographic data to the list
-            demographicDataList.Clear();
-            demographicDataList.Add(demographicData);
+                // Add the demographic data to the list
+                demographicDataList.Clear();
+                demographicDataList.Add(demographicData);
 
-            // Calculate the suburb Score
-            suburb.SuburbScore = demographicData.CalculateOverallScore();        
-            return suburb.SuburbScore;
+                // Calculate the suburb Score
+                suburb.SuburbScore = demographicData.CalculateOverallScore();
+            }
+            catch (Exception ex)
+            {
+                await searchView.DisplayAlert("Error", ex.Message, "OK");
+                suburb.SuburbScore = -1;
+            }
+ 
         }
         public async Task UpdateSearchUIAsync(string suburbName, string stateName)
         {
@@ -91,17 +100,29 @@ namespace SuburbExplorer.Controllers
                 $"Total dwellings: {tenureRentedAndTotalList[1]} || ";
             */
             // Display the Score
-            int suburbScore = await CalculateSuburbScoreAynsc(suburbName, stateName);
-            if (suburbScore >= 75)
-            {
-                searchView.EntryABSdata.BackgroundColor = Colors.Green;
+            await CalculateSuburbScoreAynsc(suburbName, stateName);
+            if (suburb.SuburbScore == -1)
+            { 
+                searchView.EntryABSdata.BackgroundColor = Colors.Gray;
+                searchView.EntryABSdata.Text = string.Empty;
             }
-            else if (suburbScore < 75 && suburbScore >= 50) 
+            else
             {
-                searchView.EntryABSdata.BackgroundColor = Colors.Orange;
+                if (suburb.SuburbScore >= 75)
+                {
+                    searchView.EntryABSdata.BackgroundColor = Colors.Green;
+                }
+                else if (suburb.SuburbScore < 75 && suburb.SuburbScore >= 50)
+                {
+                    searchView.EntryABSdata.BackgroundColor = Colors.Orange;
+                }
+                else
+                {
+                    searchView.EntryABSdata.BackgroundColor = Colors.Red;
+                }
+                searchView.EntryABSdata.Text = suburb.SuburbScore.ToString();
             }
-            else { searchView.EntryABSdata.BackgroundColor = Colors.Red; }
-            searchView.EntryABSdata.Text = suburbScore.ToString();
+
 
             // Display the listview with demographic data. Data binding in ListView
             searchView.ListViewDemographicData.ItemsSource = null;
@@ -111,21 +132,30 @@ namespace SuburbExplorer.Controllers
 
         public async Task SaveAsFavoriteSuburb(string suburbName, string stateName)
         {
+
+            // look up the state code and suburb code
+            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+            // Check is the suburb is in the existing favorite suburb list
+            Suburb existingFavoriteSuburb = await sqlService.CheckDuplicateFavoriteSuburbAsync(suburbCode);
+            // If suburb is already in the favorite suburb list, display an alert
+            if (existingFavoriteSuburb != null)
+            {
+                await searchView.DisplayAlert("Fail", "Suburb already in the favorite list.", "OK");
+                return;
+            }
             // Set properties of the suburb when Save As Favorite button is clicked
             suburb.IsFavorite = true;
             suburb.SuburbName = suburbName;
             suburb.StateName = stateName;
-            suburb.SuburbScore = await CalculateSuburbScoreAynsc(suburbName, stateName);
-            // look up the state code and suburb code
-            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+            await CalculateSuburbScoreAynsc(suburbName, stateName);
             suburb.SuburbCode = suburbCode;
             suburb.StateCode = stateCode;
             int result = await sqlService.AddFavoriteSuburbAsync(suburb);
-            if (result == 1)
+            if (result == 1) 
             {
-                searchView.ButtonSaveAsFavorite.IsEnabled = false;
-               
+                await searchView.DisplayAlert("Success", "Suburb is added as favorite", "Ok");
             }
+ 
         }
 
     }

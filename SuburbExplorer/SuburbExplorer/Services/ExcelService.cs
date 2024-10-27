@@ -39,12 +39,7 @@ namespace SuburbExplorer.Services
                     return (StateCode, SuburbCode);
                 }
             }
-
             throw new Exception("Suburb not found");
-
         }
-
-
-
     }
 }

@@ -15,6 +15,7 @@ public partial class FavoritesView : ContentPage
 	{
 		InitializeComponent();
 		sqlService = App.sqlService;
+        BindingContext = this;
 	}
 
     public async Task UpdateFavoriteSuburbAsync()

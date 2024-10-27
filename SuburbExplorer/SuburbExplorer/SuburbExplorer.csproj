@@ -61,11 +61,7 @@
 	  <None Remove="Resources\Images\help_icon.png" />
 	  <None Remove="Resources\Images\search_icon.png" />
 	  <None Remove="Resources\Images\settings_icon.png" />
-	  <None Remove="SuburbCodes.xlsx" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiAsset Include="SuburbCodes.xlsx" />
+	  <None Remove="Resources\Raw\SuburbCodes.xlsx" />
 	</ItemGroup>
 
 	<ItemGroup>
