@@ -11,6 +11,7 @@
             <Picker x:Name="PickerState" HorizontalOptions="Center" WidthRequest="300" Margin="0, 20"/>
             <Button x:Name="ButtonSearch" Text="Search" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSearch_Clicked" />
             <Label Text="Suburb Score" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0"/>
+            <Entry x:Name="EntryABSdataTest" FontAttributes="Bold" FontSize="Micro" Placeholder="" Margin="20" x:FieldModifier="public" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <Entry x:Name="EntryABSdata" FontAttributes="Bold" FontSize="Medium" Placeholder="" Margin="20" x:FieldModifier="public" HeightRequest="100" WidthRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <Label Text="Demographic details" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" Margin="20" />
             <ListView x:Name="ListViewDemographicData" x:FieldModifier="public" HorizontalOptions="Center" WidthRequest="300">
@@ -30,7 +31,7 @@
                                     <RowDefinition Height="*"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
-                                <Label Text="Suburb" Grid.Column="1" Grid.Row="0" FontSize="Micro" />
+                                <Label Text="{Binding SuburbName}" Grid.Column="1" Grid.Row="0" FontSize="Micro" />
                                 <Label Text="State" Grid.Column="2" Grid.Row="0" FontSize="Micro" />
                                 <Label Text="N/A"  Grid.Column="2" Grid.Row="1" FontSize="Micro" />
                                 <Label Text="Median Age" Grid.Column="0" Grid.Row="1" FontSize="Micro"/>

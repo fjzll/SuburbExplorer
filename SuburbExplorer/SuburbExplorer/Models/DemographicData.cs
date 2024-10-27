@@ -8,6 +8,7 @@ namespace SuburbExplorer.Models
 {
     public class DemographicData
     {
+        public string? SuburbName { get; set; }
         //Data from ABS API 
         public MedianAge? MedianAge { get; set; }
         public IncomeLevel? IncomeLevel { get; set; }

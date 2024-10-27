@@ -41,6 +41,7 @@ namespace SuburbExplorer.Controllers
             try
             {
                 // Initialise demographic data classes
+                demographicData.SuburbName = suburbName;
                 demographicData.MedianAge = new MedianAge();
                 demographicData.IncomeLevel = new IncomeLevel();
                 demographicData.RentalYield = new RentalYield();
@@ -84,13 +85,12 @@ namespace SuburbExplorer.Controllers
         }
         public async Task UpdateSearchUIAsync(string suburbName, string stateName)
         {
-            /* Test the output
-            // look up the state code and suburb code
+            // look up the state code and suburb code - test code
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
             List<int?> mediumHousehouldIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
             List<int?> tenureRentedAndTotalList = await apiService.GetRentedTypeAndTotalAsync(suburbName, stateName);
             // string response = await service.Get();
-            searchView.EntryABSdata.Text = 
+            searchView.EntryABSdataTest.Text = 
                 $"Suburb code: {suburbCode} || " + 
                 $"State code: {stateCode} || " +
                 $"Medium age: {mediumHousehouldIncomeAndRentAndAgeList[0]} || " + 
@@ -98,7 +98,7 @@ namespace SuburbExplorer.Controllers
                 $"Medium rent: {mediumHousehouldIncomeAndRentAndAgeList[2]} ||"+
                 $"Rented household: {tenureRentedAndTotalList[0]} || " +
                 $"Total dwellings: {tenureRentedAndTotalList[1]} || ";
-            */
+
             // Display the Score
             await CalculateSuburbScoreAynsc(suburbName, stateName);
             if (suburb.SuburbScore == -1)
