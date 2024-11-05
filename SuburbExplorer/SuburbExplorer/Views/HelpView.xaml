@@ -2,14 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuburbExplorer.Views.HelpView"
-             Title="Help">
+             Title="Help"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
     <VerticalStackLayout Padding="10">
         <Label 
             Text="Need Help? Contact Us"
             FontAttributes="Bold"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            FontSize="Large"/>
+            FontSize="Medium"/>
         <ScrollView>
             <Grid Margin="30">
                 <Grid.RowDefinitions>

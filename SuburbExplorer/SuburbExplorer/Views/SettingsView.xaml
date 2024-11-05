@@ -3,11 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuburbExplorer.Views.SettingsView"
              Title="Settings"
-             x:Name="SettingsPage">
+             x:Name="SettingsPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
     <VerticalStackLayout Padding="10">
         <Label 
             Text="Change Your Settings"
             FontAttributes="Bold"
+            FontSize="Medium"
             Margin="30"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 

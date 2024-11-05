@@ -85,6 +85,7 @@ namespace SuburbExplorer.Controllers
         }
         public async Task UpdateSearchUIAsync(string suburbName, string stateName)
         {
+            /*
             // look up the state code and suburb code - test code
             var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
             List<int?> mediumHousehouldIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
@@ -98,6 +99,7 @@ namespace SuburbExplorer.Controllers
                 $"Medium rent: {mediumHousehouldIncomeAndRentAndAgeList[2]} ||"+
                 $"Rented household: {tenureRentedAndTotalList[0]} || " +
                 $"Total dwellings: {tenureRentedAndTotalList[1]} || ";
+            */
 
             // Display the Score
             await CalculateSuburbScoreAynsc(suburbName, stateName);
@@ -132,30 +134,35 @@ namespace SuburbExplorer.Controllers
 
         public async Task SaveAsFavoriteSuburb(string suburbName, string stateName)
         {
-
-            // look up the state code and suburb code
-            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
-            // Check is the suburb is in the existing favorite suburb list
-            Suburb existingFavoriteSuburb = await sqlService.CheckDuplicateFavoriteSuburbAsync(suburbCode);
-            // If suburb is already in the favorite suburb list, display an alert
-            if (existingFavoriteSuburb != null)
+            try
             {
-                await searchView.DisplayAlert("Fail", "Suburb already in the favorite list.", "OK");
-                return;
+                // look up the state code and suburb code
+                var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+                // Check is the suburb is in the existing favorite suburb list
+                Suburb existingFavoriteSuburb = await sqlService.CheckDuplicateFavoriteSuburbAsync(suburbCode);
+                // If suburb is already in the favorite suburb list, display an alert
+                if (existingFavoriteSuburb != null)
+                {
+                    await searchView.DisplayAlert("Fail", "Suburb already in the favorite list.", "OK");
+                    return;
+                }
+                // Set properties of the suburb when Save As Favorite button is clicked
+                suburb.IsFavorite = true;
+                suburb.SuburbName = suburbName;
+                suburb.StateName = stateName;
+                await CalculateSuburbScoreAynsc(suburbName, stateName);
+                suburb.SuburbCode = suburbCode;
+                suburb.StateCode = stateCode;
+                int result = await sqlService.AddFavoriteSuburbAsync(suburb);
+                if (result == 1)
+                {
+                    await searchView.DisplayAlert("Success", "Suburb is added as favorite", "Ok");
+                }
             }
-            // Set properties of the suburb when Save As Favorite button is clicked
-            suburb.IsFavorite = true;
-            suburb.SuburbName = suburbName;
-            suburb.StateName = stateName;
-            await CalculateSuburbScoreAynsc(suburbName, stateName);
-            suburb.SuburbCode = suburbCode;
-            suburb.StateCode = stateCode;
-            int result = await sqlService.AddFavoriteSuburbAsync(suburb);
-            if (result == 1) 
+            catch (Exception ex) 
             {
-                await searchView.DisplayAlert("Success", "Suburb is added as favorite", "Ok");
+                await searchView.DisplayAlert("Error", ex.Message, "OK");
             }
- 
         }
 
     }

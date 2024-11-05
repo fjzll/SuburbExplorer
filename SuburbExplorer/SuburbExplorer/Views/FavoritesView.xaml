@@ -2,26 +2,28 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuburbExplorer.Views.FavoritesView"
-             Title="Favorites">
+             Title="Favorites"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
     <VerticalStackLayout Padding="10">
         <Label 
             Text="Favorite Suburbs"
             FontAttributes="Bold"
-            FontSize="Large"
+            FontSize="Medium"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            Margin="20"/>
         <VerticalStackLayout Margin="100, 20, 100, 0">
-            <Grid HorizontalOptions="FillAndExpand" Margin="0,0,0,10">
+            <Grid HorizontalOptions="Center" Margin="0,0,0,10">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="110"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Text="Suburb Name" FontAttributes="Bold" FontSize="Micro"/>
-                <Label Grid.Column="1" Text="State Name" FontAttributes="Bold" FontSize="Micro"/>
-                <Label Grid.Column="2" Text="Suburb Score" FontAttributes="Bold" FontSize="Micro"/>
+                <Label Grid.Column="0" Text="Suburb Name" FontAttributes="Bold" FontSize="Small" WidthRequest="110" HorizontalOptions="Start" />
+                <Label Grid.Column="1" Text="State Name" FontAttributes="Bold" FontSize="Small" WidthRequest="110" />
+                <Label Grid.Column="2" Text="Suburb Score" FontAttributes="Bold" FontSize="Small" WidthRequest="110" />
             </Grid>
-            <ListView x:Name="ListViewFavoriteSuburbs" x:FieldModifier="public" HorizontalOptions="FillAndExpand" SelectedItem="{Binding SelectedSuburb}" >
+            <ListView x:Name="ListViewFavoriteSuburbs" x:FieldModifier="public" HorizontalOptions="Center" SelectedItem="{Binding SelectedSuburb}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

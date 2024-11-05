@@ -1,4 +1,5 @@
 using OfficeOpenXml.Drawing.Controls;
+using SuburbExplorer.Resources.Styles;
 
 namespace SuburbExplorer.Views;
 
@@ -7,13 +8,13 @@ public partial class SettingsView : ContentPage
 	public SettingsView()
 	{
 		InitializeComponent();
-		PickerFontSize.SelectedItem = "Small";
+		PickerFontSize.SelectedItem = "Medium";
 	}
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-		//Preference setting for theme
-		Preferences.Set(PreferencesTypes.ThemeLight.ToString(), SwitchTheme.IsToggled);
+		//Save preference setting for theme
+		Preferences.Set(PreferencesTypes.ThemeLight.ToString(), !SwitchTheme.IsToggled);
 
 		//Preference settings for font size
 		Preferences.Set(PreferencesTypes.FontSize.ToString(), PickerFontSize.SelectedItem?.ToString());
@@ -23,12 +24,12 @@ public partial class SettingsView : ContentPage
 	private void UpdateUI()
 	{
 		//Update the theme when user changes the setting
-		SwitchTheme.IsToggled = Preferences.Get(PreferencesTypes.ThemeLight.ToString(), true);
-		string theme = SwitchTheme.IsToggled ? "Light" : "Gray";
+		SwitchTheme.IsToggled = !Preferences.Get(PreferencesTypes.ThemeLight.ToString(), true);
+		//Update the theme label
+		string theme = SwitchTheme.IsToggled ? "Dark" : "Light";
 		LabelTheme.Text = $"Theme {theme}";
-		SettingsPage.BackgroundColor = SwitchTheme.IsToggled ? Colors.White: Colors.Gray;
 		//Update the font size when user changes the setting
-		string selectedFontSize = Preferences.Get(PreferencesTypes.FontSize.ToString(), "Small");
+		string selectedFontSize = Preferences.Get(PreferencesTypes.FontSize.ToString(), "Medium");
 		double fontSize = 12;
 		switch (selectedFontSize)
 		{
@@ -49,7 +50,24 @@ public partial class SettingsView : ContentPage
 
     private void SwitchTheme_Toggled(object sender, ToggledEventArgs e)
     {
-        Preferences.Set(PreferencesTypes.ThemeLight.ToString(), SwitchTheme.IsToggled);
+        // Preferences.Set(PreferencesTypes.ThemeLight.ToString(), SwitchTheme.IsToggled);
+        ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+		mergedDictionaries.Clear();
+        if (mergedDictionaries != null)
+        {
+            if (e.Value)
+			// If the swithc is toggled, apply DarkTheme
+            {
+                mergedDictionaries.Add(new DarkTheme());
+				Preferences.Set(PreferencesTypes.ThemeLight.ToString(), false);
+            }
+            else 
+			// If the switch is toggled off, apply LightTheme
+            {
+                mergedDictionaries.Add(new LightTheme());
+				Preferences.Set(PreferencesTypes.ThemeLight.ToString(), true);
+            }
+        }
         UpdateUI();
     }
 

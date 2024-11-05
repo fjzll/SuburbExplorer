@@ -106,8 +106,15 @@ C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplore
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
 C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png

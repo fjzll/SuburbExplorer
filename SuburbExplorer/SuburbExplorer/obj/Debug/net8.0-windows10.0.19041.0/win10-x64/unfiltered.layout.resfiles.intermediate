@@ -1,3 +1,5 @@
+OpenSans-Regular.ttf
+OpenSans-Semibold.ttf
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
@@ -53,5 +55,10 @@ homeWideTile.scale-200.png
 homeWideTile.scale-400.png
 search_icon.scale-100.png
 settings_icon.scale-100.png
+splashSplashScreen.scale-100.png
+splashSplashScreen.scale-125.png
+splashSplashScreen.scale-150.png
+splashSplashScreen.scale-200.png
+splashSplashScreen.scale-400.png
 AboutAssets.txt
 SuburbCodes.xlsx

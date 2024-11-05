@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-27T14:21:12.202</Modified>
+      <Modified>2024-11-05T13:46:47.683</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-27T13:08:02.015</Modified>
+      <Modified>2024-11-05T12:49:42.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.runtimeconfig.json">
       <PackagePath>SuburbExplorer.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-22T07:08:30.905</Modified>
+      <Modified>2024-11-05T12:49:41.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.dll">
       <PackagePath>SuburbExplorer.dll</PackagePath>
-      <Modified>2024-10-27T14:21:11.604</Modified>
+      <Modified>2024-11-05T13:46:45.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SuburbExplorer.exe</PackagePath>
-      <Modified>2024-10-27T14:21:11.611</Modified>
+      <Modified>2024-11-05T13:46:45.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -57,229 +57,257 @@
       <PackagePath>SuburbCodes.xlsx</PackagePath>
       <Modified>2024-10-27T13:02:01.934</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+      <Modified>2024-11-05T08:04:16.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+      <Modified>2024-11-05T08:04:16.240</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+      <Modified>2024-11-05T08:04:16.287</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+      <Modified>2024-11-05T08:04:16.334</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+      <Modified>2024-11-05T08:04:16.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+      <Modified>2024-09-16T13:41:34.187</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+      <Modified>2024-09-16T13:41:34.189</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.881</Modified>
+      <Modified>2024-11-05T08:04:19.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.881</Modified>
+      <Modified>2024-11-05T08:04:19.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.880</Modified>
+      <Modified>2024-11-05T08:04:19.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.880</Modified>
+      <Modified>2024-11-05T08:04:19.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.879</Modified>
+      <Modified>2024-11-05T08:04:19.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-100.png">
       <PackagePath>favorite_icon.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.853</Modified>
+      <Modified>2024-11-05T08:04:19.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\help_icon.scale-100.png">
       <PackagePath>help_icon.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.853</Modified>
+      <Modified>2024-11-05T08:04:19.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.ico">
       <PackagePath>home.ico</PackagePath>
-      <Modified>2024-10-21T09:12:41.879</Modified>
+      <Modified>2024-11-05T08:04:19.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLargeTile.scale-100.png">
       <PackagePath>homeLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.856</Modified>
+      <Modified>2024-11-05T08:04:19.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLargeTile.scale-125.png">
       <PackagePath>homeLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.856</Modified>
+      <Modified>2024-11-05T08:04:19.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLargeTile.scale-150.png">
       <PackagePath>homeLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.855</Modified>
+      <Modified>2024-11-05T08:04:19.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLargeTile.scale-200.png">
       <PackagePath>homeLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.855</Modified>
+      <Modified>2024-11-05T08:04:19.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLargeTile.scale-400.png">
       <PackagePath>homeLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.854</Modified>
+      <Modified>2024-11-05T08:04:19.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>homeLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.868</Modified>
+      <Modified>2024-11-05T08:04:19.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>homeLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.867</Modified>
+      <Modified>2024-11-05T08:04:19.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>homeLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.866</Modified>
+      <Modified>2024-11-05T08:04:19.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>homeLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.867</Modified>
+      <Modified>2024-11-05T08:04:19.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>homeLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.867</Modified>
+      <Modified>2024-11-05T08:04:19.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-unplated_targetsize-16.png">
       <PackagePath>homeLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.872</Modified>
+      <Modified>2024-11-05T08:04:19.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-unplated_targetsize-24.png">
       <PackagePath>homeLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.872</Modified>
+      <Modified>2024-11-05T08:04:19.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-unplated_targetsize-256.png">
       <PackagePath>homeLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.869</Modified>
+      <Modified>2024-11-05T08:04:19.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-unplated_targetsize-32.png">
       <PackagePath>homeLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.871</Modified>
+      <Modified>2024-11-05T08:04:19.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.altform-unplated_targetsize-48.png">
       <PackagePath>homeLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.870</Modified>
+      <Modified>2024-11-05T08:04:19.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.scale-100.png">
       <PackagePath>homeLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.878</Modified>
+      <Modified>2024-11-05T08:04:19.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.scale-125.png">
       <PackagePath>homeLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.878</Modified>
+      <Modified>2024-11-05T08:04:19.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.scale-150.png">
       <PackagePath>homeLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.877</Modified>
+      <Modified>2024-11-05T08:04:19.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.scale-200.png">
       <PackagePath>homeLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.877</Modified>
+      <Modified>2024-11-05T08:04:19.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.scale-400.png">
       <PackagePath>homeLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.876</Modified>
+      <Modified>2024-11-05T08:04:19.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.targetsize-16.png">
       <PackagePath>homeLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.875</Modified>
+      <Modified>2024-11-05T08:04:19.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.targetsize-24.png">
       <PackagePath>homeLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.874</Modified>
+      <Modified>2024-11-05T08:04:19.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.targetsize-256.png">
       <PackagePath>homeLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.873</Modified>
+      <Modified>2024-11-05T08:04:19.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.targetsize-32.png">
       <PackagePath>homeLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.874</Modified>
+      <Modified>2024-11-05T08:04:19.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeLogo.targetsize-48.png">
       <PackagePath>homeLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.873</Modified>
+      <Modified>2024-11-05T08:04:19.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeMediumTile.scale-100.png">
       <PackagePath>homeMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.861</Modified>
+      <Modified>2024-11-05T08:04:19.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeMediumTile.scale-125.png">
       <PackagePath>homeMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.861</Modified>
+      <Modified>2024-11-05T08:04:19.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeMediumTile.scale-150.png">
       <PackagePath>homeMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.860</Modified>
+      <Modified>2024-11-05T08:04:19.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeMediumTile.scale-200.png">
       <PackagePath>homeMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.860</Modified>
+      <Modified>2024-11-05T08:04:19.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeMediumTile.scale-400.png">
       <PackagePath>homeMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.860</Modified>
+      <Modified>2024-11-05T08:04:19.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeSmallTile.scale-100.png">
       <PackagePath>homeSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.864</Modified>
+      <Modified>2024-11-05T08:04:19.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeSmallTile.scale-125.png">
       <PackagePath>homeSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.863</Modified>
+      <Modified>2024-11-05T08:04:19.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeSmallTile.scale-150.png">
       <PackagePath>homeSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.862</Modified>
+      <Modified>2024-11-05T08:04:19.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeSmallTile.scale-200.png">
       <PackagePath>homeSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.862</Modified>
+      <Modified>2024-11-05T08:04:19.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeSmallTile.scale-400.png">
       <PackagePath>homeSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.862</Modified>
+      <Modified>2024-11-05T08:04:19.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeStoreLogo.scale-100.png">
       <PackagePath>homeStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.866</Modified>
+      <Modified>2024-11-05T08:04:19.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeStoreLogo.scale-125.png">
       <PackagePath>homeStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.865</Modified>
+      <Modified>2024-11-05T08:04:19.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeStoreLogo.scale-150.png">
       <PackagePath>homeStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.865</Modified>
+      <Modified>2024-11-05T08:04:19.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeStoreLogo.scale-200.png">
       <PackagePath>homeStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.865</Modified>
+      <Modified>2024-11-05T08:04:19.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeStoreLogo.scale-400.png">
       <PackagePath>homeStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.864</Modified>
+      <Modified>2024-11-05T08:04:19.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeWideTile.scale-100.png">
       <PackagePath>homeWideTile.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.859</Modified>
+      <Modified>2024-11-05T08:04:19.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeWideTile.scale-125.png">
       <PackagePath>homeWideTile.scale-125.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.859</Modified>
+      <Modified>2024-11-05T08:04:19.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeWideTile.scale-150.png">
       <PackagePath>homeWideTile.scale-150.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.858</Modified>
+      <Modified>2024-11-05T08:04:19.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeWideTile.scale-200.png">
       <PackagePath>homeWideTile.scale-200.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.858</Modified>
+      <Modified>2024-11-05T08:04:19.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeWideTile.scale-400.png">
       <PackagePath>homeWideTile.scale-400.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.857</Modified>
+      <Modified>2024-11-05T08:04:19.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search_icon.scale-100.png">
       <PackagePath>search_icon.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.854</Modified>
+      <Modified>2024-11-05T08:04:19.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_icon.scale-100.png">
       <PackagePath>settings_icon.scale-100.png</PackagePath>
-      <Modified>2024-10-21T09:12:41.852</Modified>
+      <Modified>2024-11-05T08:04:19.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SuburbExplorer.deps.json">
       <PackagePath>SuburbExplorer.deps.json</PackagePath>
-      <Modified>2024-10-27T13:08:01.567</Modified>
+      <Modified>2024-11-05T12:49:41.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
