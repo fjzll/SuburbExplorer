@@ -30,7 +30,7 @@
                 </Picker.ItemsSource>
             </Picker>
         </HorizontalStackLayout>
-        <Button Text="Save" Clicked="Button_Clicked" Margin="20, 50, 20, 0"/>
+        <Button Text="Save" BackgroundColor="SlateBlue"  Clicked="Button_Clicked" Margin="20, 50, 20, 0"/>
             
     </VerticalStackLayout>
 </ContentPage>

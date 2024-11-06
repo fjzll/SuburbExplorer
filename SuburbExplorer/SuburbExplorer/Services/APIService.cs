@@ -24,7 +24,7 @@ namespace SuburbExplorer.Services
         public async Task<List<int?>> GetHouseholdIncomeAndRentAsync(string suburbName, string stateName)
         {
             // Get the suburb code and state code from Excel;
-            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+            var (stateCode, suburbCode) = excelService.LookUpStateAndSuburbCode(suburbName, stateName);
 
             //Form a request
             string dataflow = "C21_G02_SAL/";
@@ -79,7 +79,7 @@ namespace SuburbExplorer.Services
         public async Task<List<int?>> GetRentedTypeAndTotalAsync(string suburbName, string stateName)
         {
             // Get the suburb code and state code from Excel;
-            var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+            var (stateCode, suburbCode) = excelService.LookUpStateAndSuburbCode(suburbName, stateName);
 
             //Form a request
             string dataflow = "C21_G37_SAL/";

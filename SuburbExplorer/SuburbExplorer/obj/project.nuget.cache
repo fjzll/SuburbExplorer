@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JsxB2qlybtA=",
+  "dgSpecHash": "B65o32q/6sU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\Mobile Dev\\Assessments\\part2\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\epplus\\7.3.1\\epplus.7.3.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",

@@ -53,7 +53,7 @@ namespace SuburbExplorer.Controllers
                 demographicData.RentalYield.MedianRentState = 375;
 
                 // look up the state code and suburb code
-                var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+                var (stateCode, suburbCode) = excelService.LookUpStateAndSuburbCode(suburbName, stateName);
 
                 // Get median household income, rent and age and assign to demographic data 
                 List<int?> medianHouseholdIncomeAndRentAndAgeList = await apiService.GetHouseholdIncomeAndRentAsync(suburbName, stateName);
@@ -137,7 +137,7 @@ namespace SuburbExplorer.Controllers
             try
             {
                 // look up the state code and suburb code
-                var (stateCode, suburbCode) = await excelService.LookUpStateAndSuburbCodeAsync(suburbName, stateName);
+                var (stateCode, suburbCode) = excelService.LookUpStateAndSuburbCode(suburbName, stateName);
                 // Check is the suburb is in the existing favorite suburb list
                 Suburb existingFavoriteSuburb = await sqlService.CheckDuplicateFavoriteSuburbAsync(suburbCode);
                 // If suburb is already in the favorite suburb list, display an alert

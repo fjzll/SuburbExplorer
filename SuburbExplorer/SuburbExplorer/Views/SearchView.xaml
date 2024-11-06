@@ -10,7 +10,7 @@
             <Entry x:Name="EntrySuburb"  Placeholder="" VerticalOptions="Center" WidthRequest="300" HorizontalOptions="Center" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"  />
             <Label Text="Choose the state:" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Bold" Margin="20, 20, 20, 0" />
             <Picker x:Name="PickerState" HorizontalOptions="Center" WidthRequest="300" Margin="0, 20"/>
-            <Button x:Name="ButtonSearch" Text="Search" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSearch_Clicked" />
+            <Button x:Name="ButtonSearch" BackgroundColor="SlateBlue"  Text="Search" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSearch_Clicked" />
             <Label Text="Suburb Score" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0"/>
             <Entry x:Name="EntryABSdata" FontAttributes="Bold" FontSize="Medium" Placeholder="" Margin="20" x:FieldModifier="public" HeightRequest="100" WidthRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <Label Text="Demographic details" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" Margin="20" />
@@ -50,7 +50,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="ButtonSaveAsFavorite" x:FieldModifier="public" Text="Save As Favorite" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSaveAsFavorite_Clicked" />
+            <Button x:Name="ButtonSaveAsFavorite" BackgroundColor="SlateBlue"  x:FieldModifier="public" Text="Save As Favorite" WidthRequest="200" Margin="20,20,20,20" Clicked="ButtonSaveAsFavorite_Clicked" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

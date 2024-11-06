@@ -46470,11 +46470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Mobile Dev\\Assessments\\part2\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer.csproj",
       "projectName": "SuburbExplorer",
-      "projectPath": "C:\\Users\\admin\\Desktop\\Mobile Dev\\Assessments\\part2\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\Mobile Dev\\Assessments\\part2\\SuburbExplorer\\SuburbExplorer\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\SuburbExplorer\\SuburbExplorer\\SuburbExplorer\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

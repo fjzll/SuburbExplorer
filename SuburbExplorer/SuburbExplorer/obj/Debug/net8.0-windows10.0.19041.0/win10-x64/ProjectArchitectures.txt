@@ -1,1 +1,1 @@
-C:\Users\admin\Desktop\Mobile Dev\Assessments\part2\SuburbExplorer\SuburbExplorer\SuburbExplorer.csproj;x64
+C:\Users\admin\Desktop\SuburbExplorer\SuburbExplorer\SuburbExplorer\SuburbExplorer.csproj;x64

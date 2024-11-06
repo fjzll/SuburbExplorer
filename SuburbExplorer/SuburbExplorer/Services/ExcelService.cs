@@ -5,22 +5,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace SuburbExplorer.Services
 {
     public class ExcelService
     {
         //Embeded Excel that contains suburb codes
-        const string FileName = "SuburbCodes.xlsx";
+        const string FileName = "SuburbExplorer.Resources.Raw.SuburbCodes.xlsx";
         public ExcelService() 
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
         }
 
         //Read the excel file and extract suburb code and state code
-        public async Task <(int StateCode, int SuburbCode)> LookUpStateAndSuburbCodeAsync(string SuburbName, string StateName)
+        public (int StateCode, int SuburbCode) LookUpStateAndSuburbCode(string SuburbName, string StateName)
         {
-            using var stream = await FileSystem.OpenAppPackageFileAsync(FileName);
+            var assembly = Assembly.GetExecutingAssembly();
+            using var stream = assembly.GetManifestResourceStream(FileName);
             using var package = new ExcelPackage(stream);
 
             //Open the first worksheet in the Excel

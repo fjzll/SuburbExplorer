@@ -29,7 +29,7 @@
                 <Entry Grid.Row="1" Grid.Column="1"  x:Name="EntryUserEmail" Placeholder="Enter your email" VerticalTextAlignment="Center" Margin="10"/>
                 <Label Grid.Row="2" Grid.Column="0"  Text="Message: " VerticalOptions="Center" VerticalTextAlignment="Center"/>
                 <Editor Grid.Row="2" Grid.Column="1"  x:Name="EditorUserMessage" Placeholder="Write your message" VerticalOptions="Center" VerticalTextAlignment="Center" HeightRequest="100" Margin="10"/>
-                <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" x:Name="ButtonContactForm" Text="Send" Margin="0,20,0,0" Clicked="ButtonContactForm_Clicked"/>
+                <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="SlateBlue" x:Name="ButtonContactForm" Text="Send" Margin="0,20,0,0" Clicked="ButtonContactForm_Clicked"/>
             </Grid>
         </ScrollView>
     </VerticalStackLayout>

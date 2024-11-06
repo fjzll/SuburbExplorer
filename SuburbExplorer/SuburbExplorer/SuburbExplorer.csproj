@@ -57,11 +57,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\SuburbCodes.xlsx" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\favorite_icon.png" />
 	  <None Remove="Resources\Images\help_icon.png" />
 	  <None Remove="Resources\Images\search_icon.png" />
 	  <None Remove="Resources\Images\settings_icon.png" />
 	  <None Remove="Resources\Raw\SuburbCodes.xlsx" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Raw\SuburbCodes.xlsx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
