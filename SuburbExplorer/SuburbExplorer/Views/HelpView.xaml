@@ -4,14 +4,14 @@
              x:Class="SuburbExplorer.Views.HelpView"
              Title="Help"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
-    <VerticalStackLayout Padding="10">
-        <Label 
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+            <Label 
             Text="Need Help? Contact Us"
             FontAttributes="Bold"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            FontSize="Medium"/>
-        <ScrollView>
+            FontSize="Large"/>
             <Grid Margin="30">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -23,14 +23,14 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="4*" />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Text="Name:" VerticalTextAlignment="Center"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Name:" FontSize="Small" FontAttributes="Bold" VerticalTextAlignment="Center"/>
                 <Entry Grid.Column="1" Grid.Row="0" x:Name="EntryUserName" VerticalTextAlignment="Center" Placeholder="Enter your name " Margin="10"/>
-                <Label Grid.Row="1" Grid.Column="0" Text="Email:" VerticalTextAlignment="Center"/>
+                <Label Grid.Row="1" Grid.Column="0"  FontSize="Small" FontAttributes="Bold" Text="Email:" VerticalTextAlignment="Center"/>
                 <Entry Grid.Row="1" Grid.Column="1"  x:Name="EntryUserEmail" Placeholder="Enter your email" VerticalTextAlignment="Center" Margin="10"/>
-                <Label Grid.Row="2" Grid.Column="0"  Text="Message: " VerticalOptions="Center" VerticalTextAlignment="Center"/>
+                <Label Grid.Row="2" Grid.Column="0"  FontSize="Small" FontAttributes="Bold"  Text="Message: " VerticalOptions="Center" VerticalTextAlignment="Center"/>
                 <Editor Grid.Row="2" Grid.Column="1"  x:Name="EditorUserMessage" Placeholder="Write your message" VerticalOptions="Center" VerticalTextAlignment="Center" HeightRequest="100" Margin="10"/>
                 <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="SlateBlue" x:Name="ButtonContactForm" Text="Send" Margin="0,20,0,0" Clicked="ButtonContactForm_Clicked"/>
             </Grid>
-        </ScrollView>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
