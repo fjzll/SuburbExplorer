@@ -14,10 +14,10 @@
             <Label Text="Suburb Score" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" Margin="0,20,0,0"/>
             <Entry x:Name="EntryABSdata" FontAttributes="Bold" FontSize="Medium" Placeholder="" Margin="20" x:FieldModifier="public" HeightRequest="100" WidthRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <Label Text="Demographic details" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" Margin="20" />
-            <ListView x:Name="ListViewDemographicData" x:FieldModifier="public" HorizontalOptions="Center" WidthRequest="300">
+            <ListView x:Name="ListViewDemographicData" x:FieldModifier="public" HorizontalOptions="Center" WidthRequest="300" HeightRequest="200" VerticalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        <ViewCell Height="100">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -25,11 +25,11 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
                                 </Grid.RowDefinitions>
                                 <Label Text="{Binding SuburbName}" Grid.Column="1" Grid.Row="0" FontSize="Micro" />
                                 <Label Text="State" Grid.Column="2" Grid.Row="0" FontSize="Micro" />
