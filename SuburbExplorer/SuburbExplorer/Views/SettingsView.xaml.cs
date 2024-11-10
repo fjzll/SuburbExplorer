@@ -8,6 +8,7 @@ public partial class SettingsView : ContentPage
 	public SettingsView()
 	{
 		InitializeComponent();
+		PickerFontSize.ItemsSource = new List<string> {"Small", "Medium", "Large"};
 		PickerFontSize.SelectedItem = "Medium";
 	}
 
@@ -28,24 +29,13 @@ public partial class SettingsView : ContentPage
 		//Update the theme label
 		string theme = SwitchTheme.IsToggled ? "Dark" : "Light";
 		LabelTheme.Text = $"Theme {theme}";
-		//Update the font size when user changes the setting
-		string selectedFontSize = Preferences.Get(PreferencesTypes.FontSize.ToString(), "Medium");
-		double fontSize = 12;
-		switch (selectedFontSize)
-		{
-			case "Small":
-				fontSize = 14;
-				break;
-			case "Medium":
-				fontSize = 16;
-				break;
-			case "Large":
-				fontSize = 20;
-				break;
-		}
-		//LabelFontSize.FontSize = fontSize;
+        //Update the font size when user changes the setting
+        double fontSize = 16;
+        string selectedFontSize = Preferences.Get(PreferencesTypes.FontSize.ToString(), "Medium");
+		if (selectedFontSize == "Small") { fontSize = 14; }
+		else if (selectedFontSize == "Medium") { fontSize = 16; }
+		else if (selectedFontSize == "Large") {fontSize = 18; }
 		ApplyFontSizeToUI(this.Content, fontSize);
-
 	}
 
     private void SwitchTheme_Toggled(object sender, ToggledEventArgs e)
@@ -105,6 +95,20 @@ public partial class SettingsView : ContentPage
 				}
 			}
 		}
+		if (view is ScrollView scrollView)
+		{
+			if (scrollView.Content is Layout contentLayout)
+			{
+				foreach (var child in contentLayout.Children)
+				{
+					if (child is View childView)
+					{
+						ApplyFontSizeToUI(childView, fontSize);
+					}
+				}
+			}
+		}
+
 	}
 }
 
